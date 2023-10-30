@@ -1,0 +1,74 @@
+from python import Python
+from math import iota
+from benchmark import Benchmark
+from python import Python
+from runtime.llcl import num_cores
+from algorithm import parallelize, vectorize
+from tensor import Tensor
+from utils.index import Index
+
+alias float_type = DType.float64
+
+"""
+MOJO CODE IS 14 TIMES FASTER THAN NUMPY PYTHON CODE
+"""
+
+
+def main():
+    fn worker():
+        # Initial conditions
+        let S0: Float64 = 10000
+        let E0: Float64 = 1000
+        let I0: Float64 = 100
+        let R0: Float64 = 0
+        let B: Float64 = 2.75
+        let G: Float64 = 0.04
+        let sigma: Float64 = 0.12
+        let T: Float64 = 120
+        let dt: Float64 = 0.1
+        let NT: Int = 1200
+        let N: Int = 1000
+        
+        # Time vector
+        var t = Tensor[float_type](NT)
+        for i in range(NT):
+            t[Index(i)] = i*dt
+
+        # Initialize the vectors
+        var S= Tensor[float_type](NT)
+        var E= Tensor[float_type](NT)
+        var I= Tensor[float_type](NT)
+        var R= Tensor[float_type](NT)
+
+        # Initial conditions    
+        S[Index(0)] = S0
+        E[Index(0)] = E0
+        I[Index(0)] = I0
+        R[Index(0)] = R0
+
+        # Iterate using finite differences
+        for i in range(0, NT-1):
+            let idx = Index(i)
+            let next_idx = Index(i+1)
+            
+            S[next_idx] = S[idx]*(-B*I[idx]/N*dt + 1)
+            E[next_idx] = (B*S[idx]*I[idx]/N - sigma*E[idx])*dt + E[idx] 
+            I[next_idx] = (sigma*E[idx]-G*I[idx])*dt + I[idx] 
+            R[next_idx] = G*I[idx]*dt + R[idx] 
+
+    @ parameter
+    fn benchmark():
+        worker()
+
+    time = Python.import_module("time")
+    
+    let runtime = Benchmark().run[benchmark]() / 1e6  #// Dividing by 1e6 to get the result in milliseconds
+    print("Time taken by benchmark function:", runtime, "ms")
+
+    # classical way of measuring time
+    let start = time.time()
+    worker()
+    let end = time.time()
+    print("Time taken by worker function:", (end - start)*1000, "ms")
+
+#main() # // Call the main function
