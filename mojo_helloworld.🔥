@@ -1,0 +1,11 @@
+# Mojo Hello World
+"""
+This Repo will be used to try out Mojo, the superset of python
+
+"""
+
+fn main():
+    print("Hello World")
+
+
+
