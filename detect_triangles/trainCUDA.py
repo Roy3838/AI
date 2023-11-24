@@ -41,15 +41,15 @@ else:
 model = TriangleNet().to(device)
 
 
-batch_size = 4
+batch_size = 5
 learning_rate = 0.001
-num_epochs = 1
+num_epochs = 14
 dataset_path = 'data/triangles_dataset'
 labels = np.load(os.path.join(dataset_path, 'labels.npy'), allow_pickle=True)
 
 # Remember to resize images to 640x480 if not already
 transform = transforms.Compose([
-    transforms.Resize((480, 640)),  # Resize to match input size
+    transforms.Resize((100, 100)),  # Resize to match input size
     transforms.ToTensor(),
     # Add any additional transformations if needed
 ])
@@ -81,7 +81,9 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        # ... existing code for logging ...
+        if (i+1) % 100 == 0:
+            print(f'Epoch [{epoch+1}/{num_epochs}], Step [{i+1}/{len(data_loader)}], Loss: {loss.item()}')
+
 
 # Save model
 # Make sure to move the model back to CPU before saving
