@@ -11,14 +11,18 @@ print("model initialized")
 model.load_state_dict(torch.load('model.pth'))
 model.eval()  # Set the model to evaluation mode
 
-# Transformation for the image (should be the same as used during training)
+# Define the transformation: resize to 640x480 and convert to grayscale
 transform = transforms.Compose([
-    transforms.ToTensor(),
+    transforms.Resize((480, 640)),
+    transforms.Grayscale(),
+    transforms.ToTensor()
 ])
 
 # Load an image
 image_path = '/home/jay/repos/AI/data/triangles_run/photo1700692109.jpeg'
-image = Image.open(image_path).convert('L')
+image_path = '/home/jay/repos/AI/data/triangles_run/photo1700692109 (2).jpeg'
+# Load and transform the first image
+image = Image.open(image_path)
 image = transform(image)
 image = image.unsqueeze(0)  # Add a batch dimension
 
