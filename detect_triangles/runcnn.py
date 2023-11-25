@@ -13,7 +13,7 @@ model.eval()  # Set the model to evaluation mode
 
 # Define the transformation: resize to 640x480 and convert to grayscale
 transform = transforms.Compose([
-    transforms.Resize((480, 640)),
+    transforms.Resize((100, 100)),
     transforms.Grayscale(),
     transforms.ToTensor()
 ])

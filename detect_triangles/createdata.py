@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 
-MAX_TRIANGLE = 30
+MAX_TRIANGLE = 60
 ANGLE_SIMILARITY_THRESHOLD = 20  # Degrees within which angles should be similar
 
 # Function to generate a random triangle and return its image and vertices
