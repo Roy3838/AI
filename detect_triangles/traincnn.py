@@ -11,23 +11,27 @@ from draw_on_image import *
 from itertools import permutations
 import matplotlib.pyplot as plt
 
-def plot_vertices(fig, ax, image, real_vertices, predicted_vertices):
-    
-    ax.clear()  # Clear the current axes
+def plot_vertices(image, real_vertices, predicted_vertices, epoch, step, loss, mse_loss, penalty):
+    plt.close()  # Close the previous plot if it exists
 
     # Convert tensor image to numpy and plot
     image = image.squeeze().numpy()  # Remove channel and batch dimensions
-    ax.imshow(image, cmap='gray')
+    plt.imshow(image, cmap='gray')
 
     # Plot real vertices
-    ax.scatter(real_vertices[:, 0], real_vertices[:, 1], color='green', label='Real')
+    plt.scatter(real_vertices[:, 0], real_vertices[:, 1], color='green', label='Real')
 
     # Plot predicted vertices
-    ax.scatter(predicted_vertices[:, 0], predicted_vertices[:, 1], color='red', label='Predicted')
+    plt.scatter(predicted_vertices[:, 0], predicted_vertices[:, 1], color='red', label='Predicted')
 
-    ax.legend()
-    plt.draw()  # Redraw the current figure
-    plt.pause(0.001)  # Pause briefly to allow the plot to update
+    plt.legend()
+
+    # Add a title with epoch, step, and loss information
+    plt.title(f'Epoch: {epoch+1}, Step: {step+1}, Loss: {loss:.4f}, MSE Loss: {mse_loss:.4f}, Penalty: {penalty:.4f}')
+
+    plt.show(block=False)
+    plt.pause(0.001)
+
     
 
 
@@ -180,10 +184,6 @@ def modified_gaussian_penalty(predicted_vertices, real_vertices, alpha=1.0):
     return total_penalty
 
 
-plt.ion()  # Turn on interactive mode
-fig, ax = plt.subplots()
-
-
 
 
 # Modify your training loop to include the penalty
@@ -212,14 +212,14 @@ for epoch in range(num_epochs):
 
         if (i+1) % 20 == 0:
             print(f'Epoch [{epoch+1}/{num_epochs}], Step [{i+1}/{len(data_loader)}], Loss: {loss.item()}, MSE Loss: {loss_mse.item()}, Penalty: {penalty.item()}')
-            # Select the first image and its vertices in the batch for plotting
             
+            # Select the first image and its vertices in the batch for plotting
             image_to_plot = images[0].cpu().detach()
             real_vertices_to_plot = real_vertices[0].cpu().detach().view(-1, 2)
             predicted_vertices_to_plot = predicted_vertices[0].cpu().detach().view(-1, 2)
 
             # Call the plotting function
-            plot_vertices(fig, ax, image_to_plot, real_vertices_to_plot, predicted_vertices_to_plot)
+            plot_vertices(image_to_plot, real_vertices_to_plot, predicted_vertices_to_plot, epoch, i, loss.item(), loss_mse.item(), penalty.item())
 
             
 
