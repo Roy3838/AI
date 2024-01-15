@@ -1,0 +1,541 @@
+﻿numero,indicador,descripcion,mnemonico,rangos,longitud
+1,Clave de entidad federativa,Unidad geográfica mayor de la división político-administrativa del país,cve_ent,00..32,2
+2,Clave de distrito electoral,Unidad geográfica por distrito electoral federal,cve_distrito,000..041,3
+3,Muestra insuficiente,Identificador de muestra insuficiente,mi,Alfanumérico,1
+4,Indígena,Identificador de distrito indígena,indigena,Alfanumérico,2
+5,Complejidad,Grupo de complejidad electoral,complejidad,Alfanumérico,40
+6,ind_001,Estimador de la población total en viviendas particulares habitadas,pob_tot,0..999999999.999999999,19
+7,ind_001_li,Límite superior del Estimador de la población total en viviendas particulares habitadas,pob_tot_li,0..999999999.999999999,19
+8,ind_001_ls,Límite inferior del Estimador de la población total en viviendas particulares habitadas,pob_tot_ls,0..999999999.999999999,19
+9,ind_001_ee,Error estándar del Estimador de la población total en viviendas particulares habitadas,pob_tot_ee,0..999999999.999999999,19
+10,ind_001_cv,Coeficiente de variación del Estimador de la población total en viviendas particulares habitadas,pob_tot_cv,0..999999999.999999999,19
+11,ind_002,Porcentaje estatal de la población,pct_pob,0..999999999.999999999,19
+12,ind_002_li,Límite superior del Porcentaje estatal de la población,pct_pob_li,0..999999999.999999999,19
+13,ind_002_ls,Límite inferior del Porcentaje estatal de la población,pct_pob_ls,0..999999999.999999999,19
+14,ind_002_ee,Error estándar del Porcentaje estatal de la población,pct_pob_ee,0..999999999.999999999,19
+15,ind_002_cv,Coeficiente de variación del Porcentaje estatal de la población,pct_pob_cv,0..999999999.999999999,19
+16,ind_003,Relación hombres - mujeres,rel_h_m,0..999999999.999999999,19
+17,ind_003_li,Límite superior de la Relación hombres - mujeres,rel_h_m_li,0..999999999.999999999,19
+18,ind_003_ls,Límite inferior de la Relación hombres - mujeres,rel_h_m_ls,0..999999999.999999999,19
+19,ind_003_ee,Error estándar de la Relación hombres - mujeres,rel_h_m_ee,0..999999999.999999999,19
+20,ind_003_cv,Coeficiente de variación de la Relación hombres - mujeres,rel_h_m_cv,0..999999999.999999999,19
+21,ind_004,Edad mediana,edad_med,0..999999999.999999999,19
+22,ind_004_li,Límite superior de la Edad mediana,edad_med_li,0..999999999.999999999,19
+23,ind_004_ls,Límite inferior de la Edad mediana,edad_med_ls,0..999999999.999999999,19
+24,ind_004_ee,Error estándar de la Edad mediana,edad_med_ee,0..999999999.999999999,19
+25,ind_004_cv,Coeficiente de variación de la Edad mediana,edad_med_cv,0..999999999.999999999,19
+26,ind_005,Razón de dependencia por edad,dep_edad,0..999999999.999999999,19
+27,ind_005_li,Límite superior de la Razón de dependencia por edad,dep_edad_li,0..999999999.999999999,19
+28,ind_005_ls,Límite inferior de la Razón de dependencia por edad,dep_edad_ls,0..999999999.999999999,19
+29,ind_005_ee,Error estándar de la Razón de dependencia por edad,dep_edad_ee,0..999999999.999999999,19
+30,ind_005_cv,Coeficiente de variación de la Razón de dependencia por edad,dep_edad_cv,0..999999999.999999999,19
+31,ind_006,Porcentaje de hombres,pct_hom,0..999999999.999999999,19
+32,ind_006_li,Límite superior del Porcentaje de hombres,pct_hom_li,0..999999999.999999999,19
+33,ind_006_ls,Límite inferior del Porcentaje de hombres,pct_hom_ls,0..999999999.999999999,19
+34,ind_006_ee,Error estándar del Porcentaje de hombres,pct_hom_ee,0..999999999.999999999,19
+35,ind_006_cv,Coeficiente de variación del Porcentaje de hombres,pct_hom_cv,0..999999999.999999999,19
+36,ind_007,Porcentaje de mujeres,pct_muj,0..999999999.999999999,19
+37,ind_007_li,Límite superior del Porcentaje de mujeres,pct_muj_li,0..999999999.999999999,19
+38,ind_007_ls,Límite inferior del Porcentaje de mujeres,pct_muj_ls,0..999999999.999999999,19
+39,ind_007_ee,Error estándar del Porcentaje de mujeres,pct_muj_ee,0..999999999.999999999,19
+40,ind_007_cv,Coeficiente de variación del Porcentaje de mujeres,pct_muj_cv,0..999999999.999999999,19
+41,ind_818,Porcentaje de población de 0 a 9 años,pob_00_09,0..999999999.999999999,19
+42,ind_818_li,Límite superior del Porcentaje de población de 0 a 9 años,pob_00_09_li,0..999999999.999999999,19
+43,ind_818_ls,Límite inferior del Porcentaje de población de 0 a 9 años,pob_00_09_ls,0..999999999.999999999,19
+44,ind_818_ee,Error estándar del Porcentaje de población de 0 a 9 años,pob_00_09_ee,0..999999999.999999999,19
+45,ind_818_cv,Coeficiente de variación del Porcentaje de población de 0 a 9 años,pob_00_09_cv,0..999999999.999999999,19
+46,ind_819,Porcentaje de población de 10 a 19 años,pob_10_19,0..999999999.999999999,19
+47,ind_819_li,Límite superior del Porcentaje de población de 10 a 19 años,pob_10_19_li,0..999999999.999999999,19
+48,ind_819_ls,Límite inferior del Porcentaje de población de 10 a 19 años,pob_10_19_ls,0..999999999.999999999,19
+49,ind_819_ee,Error estándar del Porcentaje de población de 10 a 19 años,pob_10_19_ee,0..999999999.999999999,19
+50,ind_819_cv,Coeficiente de variación del Porcentaje de población de 10 a 19 años,pob_10_19_cv,0..999999999.999999999,19
+51,ind_820,Porcentaje de población de 20 a 29 años,pob_20_29,0..999999999.999999999,19
+52,ind_820_li,Límite superior del Porcentaje de población de 20 a 29 años,pob_20_29_li,0..999999999.999999999,19
+53,ind_820_ls,Límite inferior del Porcentaje de población de 20 a 29 años,pob_20_29_ls,0..999999999.999999999,19
+54,ind_820_ee,Error estándar del Porcentaje de población de 20 a 29 años,pob_20_29_ee,0..999999999.999999999,19
+55,ind_820_cv,Coeficiente de variación del Porcentaje de población de 20 a 29 años,pob_20_29_cv,0..999999999.999999999,19
+56,ind_821,Porcentaje de población de 30 a 39 años,pob_30_39,0..999999999.999999999,19
+57,ind_821_li,Límite superior del Porcentaje de población de 30 a 39 años,pob_30_39_li,0..999999999.999999999,19
+58,ind_821_ls,Límite inferior del Porcentaje de población de 30 a 39 años,pob_30_39_ls,0..999999999.999999999,19
+59,ind_821_ee,Error estándar del Porcentaje de población de 30 a 39 años,pob_30_39_ee,0..999999999.999999999,19
+60,ind_821_cv,Coeficiente de variación del Porcentaje de población de 30 a 39 años,pob_30_39_cv,0..999999999.999999999,19
+61,ind_822,Porcentaje de población de 40 a 49 años,pob_40_49,0..999999999.999999999,19
+62,ind_822_li,Límite superior del Porcentaje de población de 40 a 49 años,pob_40_49_li,0..999999999.999999999,19
+63,ind_822_ls,Límite inferior del Porcentaje de población de 40 a 49 años,pob_40_49_ls,0..999999999.999999999,19
+64,ind_822_ee,Error estándar del Porcentaje de población de 40 a 49 años,pob_40_49_ee,0..999999999.999999999,19
+65,ind_822_cv,Coeficiente de variación del Porcentaje de población de 40 a 49 años,pob_40_49_cv,0..999999999.999999999,19
+66,ind_823,Porcentaje de población de 50 a 59 años,pob_50_59,0..999999999.999999999,19
+67,ind_823_li,Límite superior del Porcentaje de población de 50 a 59 años,pob_50_59_li,0..999999999.999999999,19
+68,ind_823_ls,Límite inferior del Porcentaje de población de 50 a 59 años,pob_50_59_ls,0..999999999.999999999,19
+69,ind_823_ee,Error estándar del Porcentaje de población de 50 a 59 años,pob_50_59_ee,0..999999999.999999999,19
+70,ind_823_cv,Coeficiente de variación del Porcentaje de población de 50 a 59 años,pob_50_59_cv,0..999999999.999999999,19
+71,ind_824,Porcentaje de población de 60 y más años,pob_60ym,0..999999999.999999999,19
+72,ind_824_li,Límite superior del Porcentaje de población de 60 y más años,pob_60ym_li,0..999999999.999999999,19
+73,ind_824_ls,Límite inferior del Porcentaje de población de 60 y más años,pob_60ym_ls,0..999999999.999999999,19
+74,ind_824_ee,Error estándar del Porcentaje de población de 60 y más años,pob_60ym_ee,0..999999999.999999999,19
+75,ind_824_cv,Coeficiente de variación del Porcentaje de población de 60 y más años,pob_60ym_cv,0..999999999.999999999,19
+76,ind_825,Porcentaje de población con edad no especificada,pob_edadne,0..999999999.999999999,19
+77,ind_825_li,Límite superior del Porcentaje de población con edad no especificada,pob_edadne_li,0..999999999.999999999,19
+78,ind_825_ls,Límite inferior del Porcentaje de población con edad no especificada,pob_edadne_ls,0..999999999.999999999,19
+79,ind_825_ee,Error estándar del Porcentaje de población con edad no especificada,pob_edadne_ee,0..999999999.999999999,19
+80,ind_825_cv,Coeficiente de variación del Porcentaje de población con edad no especificada,pob_edadne_cv,0..999999999.999999999,19
+81,ind_800,Estimador del total de población de 15 años y más,e_15ymas_t,0..999999999.999999999,19
+82,ind_800_li,Límite superior del Estimador del total de población de 15 años y más,e_15ymas_t_li,0..999999999.999999999,19
+83,ind_800_ls,Límite inferior del Estimador del total de población de 15 años y más,e_15ymas_t_ls,0..999999999.999999999,19
+84,ind_800_ee,Error estándar del Estimador del total de población de 15 años y más,e_15ymas_t_ee,0..999999999.999999999,19
+85,ind_800_cv,Coeficiente de variación del Estimador del total de población de 15 años y más,e_15ymas_t_cv,0..999999999.999999999,19
+86,ind_801,Porcentaje de población de 15 años y más (Total),p_15ymas_t,0..999999999.999999999,19
+87,ind_801_li,Límite superior del Porcentaje de población de 15 años y más (Total),p_15ymas_t_li,0..999999999.999999999,19
+88,ind_801_ls,Límite inferior del Porcentaje de población de 15 años y más (Total),p_15ymas_t_ls,0..999999999.999999999,19
+89,ind_801_ee,Error estándar del Porcentaje de población de 15 años y más (Total),p_15ymas_t_ee,0..999999999.999999999,19
+90,ind_801_cv,Coeficiente de variación del Porcentaje de población de 15 años y más (Total),p_15ymas_t_cv,0..999999999.999999999,19
+91,ind_802,Estimador del total de población de 15 años y más (Hombres),e_15ymas_h,0..999999999.999999999,19
+92,ind_802_li,Límite superior del Estimador del total de población de 15 años y más (Hombres),e_15ymas_h_li,0..999999999.999999999,19
+93,ind_802_ls,Límite inferior del Estimador del total de población de 15 años y más (Hombres),e_15ymas_h_ls,0..999999999.999999999,19
+94,ind_802_ee,Error estándar del Estimador del total de población de 15 años y más (Hombres),e_15ymas_h_ee,0..999999999.999999999,19
+95,ind_802_cv,Coeficiente de variación del Estimador del total de población de 15 años y más (Hombres),e_15ymas_h_cv,0..999999999.999999999,19
+96,ind_803,Porcentaje de población de 15 años y más (Hombres),p_15ymas_h,0..999999999.999999999,19
+97,ind_803_li,Límite superior del Porcentaje de población de 15 años y más (Hombres),p_15ymas_h_li,0..999999999.999999999,19
+98,ind_803_ls,Límite inferior del Porcentaje de población de 15 años y más (Hombres),p_15ymas_h_ls,0..999999999.999999999,19
+99,ind_803_ee,Error estándar del Porcentaje de población de 15 años y más (Hombres),p_15ymas_h_ee,0..999999999.999999999,19
+100,ind_803_cv,Coeficiente de variación del Porcentaje de población de 15 años y más (Hombres),p_15ymas_h_cv,0..999999999.999999999,19
+101,ind_804,Estimador del total de población de 15 años y más (Mujeres),e_15ymas_m,0..999999999.999999999,19
+102,ind_804_li,Límite superior del Estimador del total de población de 15 años y más (Mujeres),e_15ymas_m_li,0..999999999.999999999,19
+103,ind_804_ls,Límite inferior del Estimador del total de población de 15 años y más (Mujeres),e_15ymas_m_ls,0..999999999.999999999,19
+104,ind_804_ee,Error estándar del Estimador del total de población de 15 años y más (Mujeres),e_15ymas_m_ee,0..999999999.999999999,19
+105,ind_804_cv,Coeficiente de variación del Estimador del total de población de 15 años y más (Mujeres),e_15ymas_m_cv,0..999999999.999999999,19
+106,ind_805,Porcentaje de población de 15 años y más (Mujeres),p_15ymas_m,0..999999999.999999999,19
+107,ind_805_li,Límite superior del Porcentaje de población de 15 años y más (Mujeres),p_15ymas_m_li,0..999999999.999999999,19
+108,ind_805_ls,Límite inferior del Porcentaje de población de 15 años y más (Mujeres),p_15ymas_m_ls,0..999999999.999999999,19
+109,ind_805_ee,Error estándar del Porcentaje de población de 15 años y más (Mujeres),p_15ymas_m_ee,0..999999999.999999999,19
+110,ind_805_cv,Coeficiente de variación del Porcentaje de población de 15 años y más (Mujeres),p_15ymas_m_cv,0..999999999.999999999,19
+111,ind_806,Estimador del total de población de 18 años y más,e_18ymas_t,0..999999999.999999999,19
+112,ind_806_li,Límite superior del Estimador del total de población de 18 años y más,e_18ymas_t_li,0..999999999.999999999,19
+113,ind_806_ls,Límite inferior del Estimador del total de población de 18 años y más,e_18ymas_t_ls,0..999999999.999999999,19
+114,ind_806_ee,Error estándar del Estimador del total de población de 18 años y más,e_18ymas_t_ee,0..999999999.999999999,19
+115,ind_806_cv,Coeficiente de variación del Estimador del total de población de 18 años y más,e_18ymas_t_cv,0..999999999.999999999,19
+116,ind_807,Porcentaje de población de 18 años y más (Total),p_18ymas_t,0..999999999.999999999,19
+117,ind_807_li,Límite superior del Porcentaje de población de 18 años y más (Total),p_18ymas_t_li,0..999999999.999999999,19
+118,ind_807_ls,Límite inferior del Porcentaje de población de 18 años y más (Total),p_18ymas_t_ls,0..999999999.999999999,19
+119,ind_807_ee,Error estándar del Porcentaje de población de 18 años y más (Total),p_18ymas_t_ee,0..999999999.999999999,19
+120,ind_807_cv,Coeficiente de variación del Porcentaje de población de 18 años y más (Total),p_18ymas_t_cv,0..999999999.999999999,19
+121,ind_808,Estimador del total de población de 18 años y más (Hombres),e_18ymas_h,0..999999999.999999999,19
+122,ind_808_li,Límite superior del Estimador del total de población de 18 años y más (Hombres),e_18ymas_h_li,0..999999999.999999999,19
+123,ind_808_ls,Límite inferior del Estimador del total de población de 18 años y más (Hombres),e_18ymas_h_ls,0..999999999.999999999,19
+124,ind_808_ee,Error estándar del Estimador del total de población de 18 años y más (Hombres),e_18ymas_h_ee,0..999999999.999999999,19
+125,ind_808_cv,Coeficiente de variación del Estimador del total de población de 18 años y más (Hombres),e_18ymas_h_cv,0..999999999.999999999,19
+126,ind_809,Porcentaje de población de 18 años y más (Hombres),p_18ymas_h,0..999999999.999999999,19
+127,ind_809_li,Límite superior del Porcentaje de población de 18 años y más (Hombres),p_18ymas_h_li,0..999999999.999999999,19
+128,ind_809_ls,Límite inferior del Porcentaje de población de 18 años y más (Hombres),p_18ymas_h_ls,0..999999999.999999999,19
+129,ind_809_ee,Error estándar del Porcentaje de población de 18 años y más (Hombres),p_18ymas_h_ee,0..999999999.999999999,19
+130,ind_809_cv,Coeficiente de variación del Porcentaje de población de 18 años y más (Hombres),p_18ymas_h_cv,0..999999999.999999999,19
+131,ind_810,Estimador del total de población de 18 años y más (Mujeres),e_18ymas_m,0..999999999.999999999,19
+132,ind_810_li,Límite superior del Estimador del total de población de 18 años y más (Mujeres),e_18ymas_m_li,0..999999999.999999999,19
+133,ind_810_ls,Límite inferior del Estimador del total de población de 18 años y más (Mujeres),e_18ymas_m_ls,0..999999999.999999999,19
+134,ind_810_ee,Error estándar del Estimador del total de población de 18 años y más (Mujeres),e_18ymas_m_ee,0..999999999.999999999,19
+135,ind_810_cv,Coeficiente de variación del Estimador del total de población de 18 años y más (Mujeres),e_18ymas_m_cv,0..999999999.999999999,19
+136,ind_811,Porcentaje de población de 18 años y más (Mujeres),p_18ymas_m,0..999999999.999999999,19
+137,ind_811_li,Límite superior del Porcentaje de población de 18 años y más (Mujeres),p_18ymas_m_li,0..999999999.999999999,19
+138,ind_811_ls,Límite inferior del Porcentaje de población de 18 años y más (Mujeres),p_18ymas_m_ls,0..999999999.999999999,19
+139,ind_811_ee,Error estándar del Porcentaje de población de 18 años y más (Mujeres),p_18ymas_m_ee,0..999999999.999999999,19
+140,ind_811_cv,Coeficiente de variación del Porcentaje de población de 18 años y más (Mujeres),p_18ymas_m_cv,0..999999999.999999999,19
+141,ind_047,Densidad de población (hab/km2),den_pob,0..999999999.999999999,19
+142,ind_047_li,Límite superior del Densidad de población (hab/km2),den_pob_li,0..999999999.999999999,19
+143,ind_047_ls,Límite inferior del Densidad de población (hab/km2),den_pob_ls,0..999999999.999999999,19
+144,ind_047_ee,Error estándar del Densidad de población (hab/km2),den_pob_ee,0..999999999.999999999,19
+145,ind_047_cv,Coeficiente de variación del Densidad de población (hab/km2),den_pob_cv,0..999999999.999999999,19
+146,ind_049,Porcentaje de la población que tiene acta de nacimiento,act_nac,0..999999999.999999999,19
+147,ind_049_li,Límite superior del Porcentaje de la población que tiene acta de nacimiento,act_nac_li,0..999999999.999999999,19
+148,ind_049_ls,Límite inferior del Porcentaje de la población que tiene acta de nacimiento,act_nac_ls,0..999999999.999999999,19
+149,ind_049_ee,Error estándar del Porcentaje de la población que tiene acta de nacimiento,act_nac_ee,0..999999999.999999999,19
+150,ind_049_cv,Coeficiente de variación del Porcentaje de la población que tiene acta de nacimiento,act_nac_cv,0..999999999.999999999,19
+151,ind_050,Porcentaje de la población que no tiene acta de nacimiento,no_act_nac,0..999999999.999999999,19
+152,ind_050_li,Límite superior del Porcentaje de la población que no tiene acta de nacimiento,no_act_nac_li,0..999999999.999999999,19
+153,ind_050_ls,Límite inferior del Porcentaje de la población que no tiene acta de nacimiento,no_act_nac_ls,0..999999999.999999999,19
+154,ind_050_ee,Error estándar del Porcentaje de la población que no tiene acta de nacimiento,no_act_nac_ee,0..999999999.999999999,19
+155,ind_050_cv,Coeficiente de variación del Porcentaje de la población que no tiene acta de nacimiento,no_act_nac_cv,0..999999999.999999999,19
+156,ind_051,Porcentaje de la población registrada en otro país,reg_o_pais,0..999999999.999999999,19
+157,ind_051_li,Límite superior del Porcentaje de la población registrada en otro país,reg_o_pais_li,0..999999999.999999999,19
+158,ind_051_ls,Límite inferior del Porcentaje de la población registrada en otro país,reg_o_pais_ls,0..999999999.999999999,19
+159,ind_051_ee,Error estándar del Porcentaje de la población registrada en otro país,reg_o_pais_ee,0..999999999.999999999,19
+160,ind_051_cv,Coeficiente de variación del Porcentaje de la población registrada en otro país,reg_o_pais_cv,0..999999999.999999999,19
+161,ind_048,Porcentaje de la población que no tiene nacionalidad mexicana,o_nacion,0..999999999.999999999,19
+162,ind_048_li,Límite superior del Porcentaje de la población que no tiene nacionalidad mexicana,o_nacion_li,0..999999999.999999999,19
+163,ind_048_ls,Límite inferior del Porcentaje de la población que no tiene nacionalidad mexicana,o_nacion_ls,0..999999999.999999999,19
+164,ind_048_ee,Error estándar del Porcentaje de la población que no tiene nacionalidad mexicana,o_nacion_ee,0..999999999.999999999,19
+165,ind_048_cv,Coeficiente de variación del Porcentaje de la población que no tiene nacionalidad mexicana,o_nacion_cv,0..999999999.999999999,19
+166,ind_053,Promedio de hijos nacidos vivos de las mujeres de 15 a 49 años,prom_hnv,0..999999999.999999999,19
+167,ind_053_li,Límite superior del Promedio de hijos nacidos vivos de las mujeres de 15 a 49 años,prom_hnv_li,0..999999999.999999999,19
+168,ind_053_ls,Límite inferior del Promedio de hijos nacidos vivos de las mujeres de 15 a 49 años,prom_hnv_ls,0..999999999.999999999,19
+169,ind_053_ee,Error estándar del Promedio de hijos nacidos vivos de las mujeres de 15 a 49 años,prom_hnv_ee,0..999999999.999999999,19
+170,ind_053_cv,Coeficiente de variación del Promedio de hijos nacidos vivos de las mujeres de 15 a 49 años,prom_hnv_cv,0..999999999.999999999,19
+171,ind_054,Porcentaje de hijos fallecidos de las mujeres de 15 a 49 años,prom_hf,0..999999999.999999999,19
+172,ind_054_li,Límite superior del Porcentaje de hijos fallecidos de las mujeres de 15 a 49 años,prom_hf_li,0..999999999.999999999,19
+173,ind_054_ls,Límite inferior del Porcentaje de hijos fallecidos de las mujeres de 15 a 49 años,prom_hf_ls,0..999999999.999999999,19
+174,ind_054_ee,Error estándar del Porcentaje de hijos fallecidos de las mujeres de 15 a 49 años,prom_hf_ee,0..999999999.999999999,19
+175,ind_054_cv,Coeficiente de variación del Porcentaje de hijos fallecidos de las mujeres de 15 a 49 años,prom_hf_cv,0..999999999.999999999,19
+176,ind_055,Estimador del total de viviendas particulares habitadas,e_vivhab,0..999999999.999999999,19
+177,ind_055_li,Límite superior del Estimador del total de viviendas particulares habitadas,e_vivhab_li,0..999999999.999999999,19
+178,ind_055_ls,Límite inferior del Estimador del total de viviendas particulares habitadas,e_vivhab_ls,0..999999999.999999999,19
+179,ind_055_ee,Error estándar del Estimador del total de viviendas particulares habitadas,e_vivhab_ee,0..999999999.999999999,19
+180,ind_055_cv,Coeficiente de variación del Estimador del total de viviendas particulares habitadas,e_vivhab_cv,0..999999999.999999999,19
+181,ind_138,Porcentaje estatal de las viviendas particulares habitadas ,p_vivhab,0..999999999.999999999,19
+182,ind_138_li,Límite superior del Porcentaje estatal de las viviendas particulares habitadas ,p_vivhab_li,0..999999999.999999999,19
+183,ind_138_ls,Límite inferior del Porcentaje estatal de las viviendas particulares habitadas ,p_vivhab_ls,0..999999999.999999999,19
+184,ind_138_ee,Error estándar del Porcentaje estatal de las viviendas particulares habitadas ,p_vivhab_ee,0..999999999.999999999,19
+185,ind_138_cv,Coeficiente de variación del Porcentaje estatal de las viviendas particulares habitadas ,p_vivhab_cv,0..999999999.999999999,19
+186,ind_056,Promedio de ocupantes por vivienda,prom_ocup,0..999999999.999999999,19
+187,ind_056_li,Límite superior del Promedio de ocupantes por vivienda,prom_ocup_li,0..999999999.999999999,19
+188,ind_056_ls,Límite inferior del Promedio de ocupantes por vivienda,prom_ocup_ls,0..999999999.999999999,19
+189,ind_056_ee,Error estándar del Promedio de ocupantes por vivienda,prom_ocup_ee,0..999999999.999999999,19
+190,ind_056_cv,Coeficiente de variación del Promedio de ocupantes por vivienda,prom_ocup_cv,0..999999999.999999999,19
+191,ind_057,Promedio de ocupantes por cuarto,pro_ocup_c,0..999999999.999999999,19
+192,ind_057_li,Límite superior del Promedio de ocupantes por cuarto,pro_ocup_c_li,0..999999999.999999999,19
+193,ind_057_ls,Límite inferior del Promedio de ocupantes por cuarto,pro_ocup_c_ls,0..999999999.999999999,19
+194,ind_057_ee,Error estándar del Promedio de ocupantes por cuarto,pro_ocup_c_ee,0..999999999.999999999,19
+195,ind_057_cv,Coeficiente de variación del Promedio de ocupantes por cuarto,pro_ocup_c_cv,0..999999999.999999999,19
+196,ind_061,Porcentaje de viviendas con disponibilidad de agua entubada en la vivienda,vph_aguadv,0..999999999.999999999,19
+197,ind_061_li,Límite superior del Porcentaje de viviendas con disponibilidad de agua entubada en la vivienda,vph_aguadv_li,0..999999999.999999999,19
+198,ind_061_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de agua entubada en la vivienda,vph_aguadv_ls,0..999999999.999999999,19
+199,ind_061_ee,Error estándar del Porcentaje de viviendas con disponibilidad de agua entubada en la vivienda,vph_aguadv_ee,0..999999999.999999999,19
+200,ind_061_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de agua entubada en la vivienda,vph_aguadv_cv,0..999999999.999999999,19
+201,ind_062,Porcentaje de viviendas con disponibilidad de drenaje en la vivienda,vph_drenaj,0..999999999.999999999,19
+202,ind_062_li,Límite superior del Porcentaje de viviendas con disponibilidad de drenaje en la vivienda,vph_drenaj_li,0..999999999.999999999,19
+203,ind_062_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de drenaje en la vivienda,vph_drenaj_ls,0..999999999.999999999,19
+204,ind_062_ee,Error estándar del Porcentaje de viviendas con disponibilidad de drenaje en la vivienda,vph_drenaj_ee,0..999999999.999999999,19
+205,ind_062_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de drenaje en la vivienda,vph_drenaj_cv,0..999999999.999999999,19
+206,ind_063,Porcentaje de viviendas con disponibilidad de servicio sanitario en la vivienda,vph_excsa,0..999999999.999999999,19
+207,ind_063_li,Límite superior del Porcentaje de viviendas con disponibilidad de servicio sanitario en la vivienda,vph_excsa_li,0..999999999.999999999,19
+208,ind_063_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de servicio sanitario en la vivienda,vph_excsa_ls,0..999999999.999999999,19
+209,ind_063_ee,Error estándar del Porcentaje de viviendas con disponibilidad de servicio sanitario en la vivienda,vph_excsa_ee,0..999999999.999999999,19
+210,ind_063_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de servicio sanitario en la vivienda,vph_excsa_cv,0..999999999.999999999,19
+211,ind_064,Porcentaje de viviendas con disponibilidad de electricidad en la vivienda,vph_c_elec,0..999999999.999999999,19
+212,ind_064_li,Límite superior del Porcentaje de viviendas con disponibilidad de electricidad en la vivienda,vph_c_elec_li,0..999999999.999999999,19
+213,ind_064_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de electricidad en la vivienda,vph_c_elec_ls,0..999999999.999999999,19
+214,ind_064_ee,Error estándar del Porcentaje de viviendas con disponibilidad de electricidad en la vivienda,vph_c_elec_ee,0..999999999.999999999,19
+215,ind_064_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de electricidad en la vivienda,vph_c_elec_cv,0..999999999.999999999,19
+216,ind_075,Porcentaje de viviendas propias,vph_prop,0..999999999.999999999,19
+217,ind_075_li,Límite superior del Porcentaje de viviendas propias,vph_prop_li,0..999999999.999999999,19
+218,ind_075_ls,Límite inferior del Porcentaje de viviendas propias,vph_prop_ls,0..999999999.999999999,19
+219,ind_075_ee,Error estándar del Porcentaje de viviendas propias,vph_prop_ee,0..999999999.999999999,19
+220,ind_075_cv,Coeficiente de variación del Porcentaje de viviendas propias,vph_prop_cv,0..999999999.999999999,19
+221,ind_076,Porcentaje de viviendas alquiladas,vph_alqui,0..999999999.999999999,19
+222,ind_076_li,Límite superior del Porcentaje de viviendas alquiladas,vph_alqui_li,0..999999999.999999999,19
+223,ind_076_ls,Límite inferior del Porcentaje de viviendas alquiladas,vph_alqui_ls,0..999999999.999999999,19
+224,ind_076_ee,Error estándar del Porcentaje de viviendas alquiladas,vph_alqui_ee,0..999999999.999999999,19
+225,ind_076_cv,Coeficiente de variación del Porcentaje de viviendas alquiladas,vph_alqui_cv,0..999999999.999999999,19
+226,ind_077,Porcentaje de viviendas familiares o prestadas,vph_prest,0..999999999.999999999,19
+227,ind_077_li,Límite superior del Porcentaje de viviendas familiares o prestadas,vph_prest_li,0..999999999.999999999,19
+228,ind_077_ls,Límite inferior del Porcentaje de viviendas familiares o prestadas,vph_prest_ls,0..999999999.999999999,19
+229,ind_077_ee,Error estándar del Porcentaje de viviendas familiares o prestadas,vph_prest_ee,0..999999999.999999999,19
+230,ind_077_cv,Coeficiente de variación del Porcentaje de viviendas familiares o prestadas,vph_prest_cv,0..999999999.999999999,19
+231,ind_078,Porcentaje de viviendas con otra situación en cuanto a su tenencia,vph_o_ten,0..999999999.999999999,19
+232,ind_078_li,Límite superior del Porcentaje de viviendas con otra situación en cuanto a su tenencia,vph_o_ten_li,0..999999999.999999999,19
+233,ind_078_ls,Límite inferior del Porcentaje de viviendas con otra situación en cuanto a su tenencia,vph_o_ten_ls,0..999999999.999999999,19
+234,ind_078_ee,Error estándar del Porcentaje de viviendas con otra situación en cuanto a su tenencia,vph_o_ten_ee,0..999999999.999999999,19
+235,ind_078_cv,Coeficiente de variación del Porcentaje de viviendas con otra situación en cuanto a su tenencia,vph_o_ten_cv,0..999999999.999999999,19
+236,ind_059,Porcentaje de viviendas con materiales de construcción precarios en paredes,vph_mppare,0..999999999.999999999,19
+237,ind_059_li,Límite superior del Porcentaje de viviendas con materiales de construcción precarios en paredes,vph_mppare_li,0..999999999.999999999,19
+238,ind_059_ls,Límite inferior del Porcentaje de viviendas con materiales de construcción precarios en paredes,vph_mppare_ls,0..999999999.999999999,19
+239,ind_059_ee,Error estándar del Porcentaje de viviendas con materiales de construcción precarios en paredes,vph_mppare_ee,0..999999999.999999999,19
+240,ind_059_cv,Coeficiente de variación del Porcentaje de viviendas con materiales de construcción precarios en paredes,vph_mppare_cv,0..999999999.999999999,19
+241,ind_060,Porcentaje de viviendas con materiales de construcción precarios en techos,vph_mptech,0..999999999.999999999,19
+242,ind_060_li,Límite superior del Porcentaje de viviendas con materiales de construcción precarios en techos,vph_mptech_li,0..999999999.999999999,19
+243,ind_060_ls,Límite inferior del Porcentaje de viviendas con materiales de construcción precarios en techos,vph_mptech_ls,0..999999999.999999999,19
+244,ind_060_ee,Error estándar del Porcentaje de viviendas con materiales de construcción precarios en techos,vph_mptech_ee,0..999999999.999999999,19
+245,ind_060_cv,Coeficiente de variación del Porcentaje de viviendas con materiales de construcción precarios en techos,vph_mptech_cv,0..999999999.999999999,19
+246,ind_058,Porcentaje de viviendas con piso de tierra,vph_pisoti,0..999999999.999999999,19
+247,ind_058_li,Límite superior del Porcentaje de viviendas con piso de tierra,vph_pisoti_li,0..999999999.999999999,19
+248,ind_058_ls,Límite inferior del Porcentaje de viviendas con piso de tierra,vph_pisoti_ls,0..999999999.999999999,19
+249,ind_058_ee,Error estándar del Porcentaje de viviendas con piso de tierra,vph_pisoti_ee,0..999999999.999999999,19
+250,ind_058_cv,Coeficiente de variación del Porcentaje de viviendas con piso de tierra,vph_pisoti_cv,0..999999999.999999999,19
+251,ind_065,Porcentaje de viviendas con disponibilidad de internet,vph_inter,0..999999999.999999999,19
+252,ind_065_li,Límite superior del Porcentaje de viviendas con disponibilidad de internet,vph_inter_li,0..999999999.999999999,19
+253,ind_065_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de internet,vph_inter_ls,0..999999999.999999999,19
+254,ind_065_ee,Error estándar del Porcentaje de viviendas con disponibilidad de internet,vph_inter_ee,0..999999999.999999999,19
+255,ind_065_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de internet,vph_inter_cv,0..999999999.999999999,19
+256,ind_066,Porcentaje de viviendas con disponibilidad de televisión de paga,vph_tvpaga,0..999999999.999999999,19
+257,ind_066_li,Límite superior del Porcentaje de viviendas con disponibilidad de televisión de paga,vph_tvpaga_li,0..999999999.999999999,19
+258,ind_066_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de televisión de paga,vph_tvpaga_ls,0..999999999.999999999,19
+259,ind_066_ee,Error estándar del Porcentaje de viviendas con disponibilidad de televisión de paga,vph_tvpaga_ee,0..999999999.999999999,19
+260,ind_066_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de televisión de paga,vph_tvpaga_cv,0..999999999.999999999,19
+261,ind_067,Porcentaje de viviendas con disponibilidad de televisión de pantalla plana,vph_panpla,0..999999999.999999999,19
+262,ind_067_li,Límite superior del Porcentaje de viviendas con disponibilidad de televisión de pantalla plana,vph_panpla_li,0..999999999.999999999,19
+263,ind_067_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de televisión de pantalla plana,vph_panpla_ls,0..999999999.999999999,19
+264,ind_067_ee,Error estándar del Porcentaje de viviendas con disponibilidad de televisión de pantalla plana,vph_panpla_ee,0..999999999.999999999,19
+265,ind_067_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de televisión de pantalla plana,vph_panpla_cv,0..999999999.999999999,19
+266,ind_068,Porcentaje de viviendas con disponibilidad de computadora,vph_pc,0..999999999.999999999,19
+267,ind_068_li,Límite superior del Porcentaje de viviendas con disponibilidad de computadora,vph_pc_li,0..999999999.999999999,19
+268,ind_068_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de computadora,vph_pc_ls,0..999999999.999999999,19
+269,ind_068_ee,Error estándar del Porcentaje de viviendas con disponibilidad de computadora,vph_pc_ee,0..999999999.999999999,19
+270,ind_068_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de computadora,vph_pc_cv,0..999999999.999999999,19
+271,ind_069,Porcentaje de viviendas con disponibilidad de teléfono celular,vph_cel,0..999999999.999999999,19
+272,ind_069_li,Límite superior del Porcentaje de viviendas con disponibilidad de teléfono celular,vph_cel_li,0..999999999.999999999,19
+273,ind_069_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de teléfono celular,vph_cel_ls,0..999999999.999999999,19
+274,ind_069_ee,Error estándar del Porcentaje de viviendas con disponibilidad de teléfono celular,vph_cel_ee,0..999999999.999999999,19
+275,ind_069_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de teléfono celular,vph_cel_cv,0..999999999.999999999,19
+276,ind_070,Porcentaje de viviendas con disponibilidad de teléfono fijo,vph_telf,0..999999999.999999999,19
+277,ind_070_li,Límite superior del Porcentaje de viviendas con disponibilidad de teléfono fijo,vph_telf_li,0..999999999.999999999,19
+278,ind_070_ls,Límite inferior del Porcentaje de viviendas con disponibilidad de teléfono fijo,vph_telf_ls,0..999999999.999999999,19
+279,ind_070_ee,Error estándar del Porcentaje de viviendas con disponibilidad de teléfono fijo,vph_telf_ee,0..999999999.999999999,19
+280,ind_070_cv,Coeficiente de variación del Porcentaje de viviendas con disponibilidad de teléfono fijo,vph_telf_cv,0..999999999.999999999,19
+281,ind_071,Porcentaje de viviendas con panel solar,vph_psolar,0..999999999.999999999,19
+282,ind_071_li,Límite superior del Porcentaje de viviendas con panel solar,vph_psolar_li,0..999999999.999999999,19
+283,ind_071_ls,Límite inferior del Porcentaje de viviendas con panel solar,vph_psolar_ls,0..999999999.999999999,19
+284,ind_071_ee,Error estándar del Porcentaje de viviendas con panel solar,vph_psolar_ee,0..999999999.999999999,19
+285,ind_071_cv,Coeficiente de variación del Porcentaje de viviendas con panel solar,vph_psolar_cv,0..999999999.999999999,19
+286,ind_072,Porcentaje de viviendas con calentador solar,vph_csolar,0..999999999.999999999,19
+287,ind_072_li,Límite superior del Porcentaje de viviendas con calentador solar,vph_csolar_li,0..999999999.999999999,19
+288,ind_072_ls,Límite inferior del Porcentaje de viviendas con calentador solar,vph_csolar_ls,0..999999999.999999999,19
+289,ind_072_ee,Error estándar del Porcentaje de viviendas con calentador solar,vph_csolar_ee,0..999999999.999999999,19
+290,ind_072_cv,Coeficiente de variación del Porcentaje de viviendas con calentador solar,vph_csolar_cv,0..999999999.999999999,19
+291,ind_073,Porcentaje de viviendas con la totalidad de focos ahorradores,vph_focaho,0..999999999.999999999,19
+292,ind_073_li,Límite superior del Porcentaje de viviendas con la totalidad de focos ahorradores,vph_focaho_li,0..999999999.999999999,19
+293,ind_073_ls,Límite inferior del Porcentaje de viviendas con la totalidad de focos ahorradores,vph_focaho_ls,0..999999999.999999999,19
+294,ind_073_ee,Error estándar del Porcentaje de viviendas con la totalidad de focos ahorradores,vph_focaho_ee,0..999999999.999999999,19
+295,ind_073_cv,Coeficiente de variación del Porcentaje de viviendas con la totalidad de focos ahorradores,vph_focaho_cv,0..999999999.999999999,19
+296,ind_074,Porcentaje de viviendas con separación de residuos,vph_serres,0..999999999.999999999,19
+297,ind_074_li,Límite superior del Porcentaje de viviendas con separación de residuos,vph_serres_li,0..999999999.999999999,19
+298,ind_074_ls,Límite inferior del Porcentaje de viviendas con separación de residuos,vph_serres_ls,0..999999999.999999999,19
+299,ind_074_ee,Error estándar del Porcentaje de viviendas con separación de residuos,vph_serres_ee,0..999999999.999999999,19
+300,ind_074_cv,Coeficiente de variación del Porcentaje de viviendas con separación de residuos,vph_serres_cv,0..999999999.999999999,19
+301,ind_079,Porcentaje de población de 15 años y más sin escolaridad,p_15ym_se,0..999999999.999999999,19
+302,ind_079_li,Límite superior del Porcentaje de población de 15 años y más sin escolaridad,p_15ym_se_li,0..999999999.999999999,19
+303,ind_079_ls,Límite inferior del Porcentaje de población de 15 años y más sin escolaridad,p_15ym_se_ls,0..999999999.999999999,19
+304,ind_079_ee,Error estándar del Porcentaje de población de 15 años y más sin escolaridad,p_15ym_se_ee,0..999999999.999999999,19
+305,ind_079_cv,Coeficiente de variación del Porcentaje de población de 15 años y más sin escolaridad,p_15ym_se_cv,0..999999999.999999999,19
+306,ind_080,Porcentaje de población de 15 años y más con nivel de escolaridad básica,p_15ym_eb,0..999999999.999999999,19
+307,ind_080_li,Límite superior del Porcentaje de población de 15 años y más con nivel de escolaridad básica,p_15ym_eb_li,0..999999999.999999999,19
+308,ind_080_ls,Límite inferior del Porcentaje de población de 15 años y más con nivel de escolaridad básica,p_15ym_eb_ls,0..999999999.999999999,19
+309,ind_080_ee,Error estándar del Porcentaje de población de 15 años y más con nivel de escolaridad básica,p_15ym_eb_ee,0..999999999.999999999,19
+310,ind_080_cv,Coeficiente de variación del Porcentaje de población de 15 años y más con nivel de escolaridad básica,p_15ym_eb_cv,0..999999999.999999999,19
+311,ind_082,Porcentaje de población de 15 años y más con nivel de escolaridad media superior,p_15ym_ems,0..999999999.999999999,19
+312,ind_082_li,Límite superior del Porcentaje de población de 15 años y más con nivel de escolaridad media superior,p_15ym_ems_li,0..999999999.999999999,19
+313,ind_082_ls,Límite inferior del Porcentaje de población de 15 años y más con nivel de escolaridad media superior,p_15ym_ems_ls,0..999999999.999999999,19
+314,ind_082_ee,Error estándar del Porcentaje de población de 15 años y más con nivel de escolaridad media superior,p_15ym_ems_ee,0..999999999.999999999,19
+315,ind_082_cv,Coeficiente de variación del Porcentaje de población de 15 años y más con nivel de escolaridad media superior,p_15ym_ems_cv,0..999999999.999999999,19
+316,ind_083,Porcentaje de población de 15 años y más con nivel de escolaridad superior,p_15ym_es,0..999999999.999999999,19
+317,ind_083_li,Límite superior del Porcentaje de población de 15 años y más con nivel de escolaridad superior,p_15ym_es_li,0..999999999.999999999,19
+318,ind_083_ls,Límite inferior del Porcentaje de población de 15 años y más con nivel de escolaridad superior,p_15ym_es_ls,0..999999999.999999999,19
+319,ind_083_ee,Error estándar del Porcentaje de población de 15 años y más con nivel de escolaridad superior,p_15ym_es_ee,0..999999999.999999999,19
+320,ind_083_cv,Coeficiente de variación del Porcentaje de población de 15 años y más con nivel de escolaridad superior,p_15ym_es_cv,0..999999999.999999999,19
+321,ind_085,Tasa de alfabetización de la población de 15 a 24 años,ta _p15a24,0..999999999.999999999,19
+322,ind_085_li,Límite superior del Tasa de alfabetización de la población de 15 a 24 años,ta _p15a24_li,0..999999999.999999999,19
+323,ind_085_ls,Límite inferior del Tasa de alfabetización de la población de 15 a 24 años,ta _p15a24_ls,0..999999999.999999999,19
+324,ind_085_ee,Error estándar del Tasa de alfabetización de la población de 15 a 24 años,ta _p15a24_ee,0..999999999.999999999,19
+325,ind_085_cv,Coeficiente de variación del Tasa de alfabetización de la población de 15 a 24 años,ta _p15a24_cv,0..999999999.999999999,19
+326,ind_086,Tasa de alfabetización de la población de 25 y más años,ta _p25mas,0..999999999.999999999,19
+327,ind_086_li,Límite superior del Tasa de alfabetización de la población de 25 y más años,ta _p25mas_li,0..999999999.999999999,19
+328,ind_086_ls,Límite inferior del Tasa de alfabetización de la población de 25 y más años,ta _p25mas_ls,0..999999999.999999999,19
+329,ind_086_ee,Error estándar del Tasa de alfabetización de la población de 25 y más años,ta _p25mas_ee,0..999999999.999999999,19
+330,ind_086_cv,Coeficiente de variación del Tasa de alfabetización de la población de 25 y más años,ta _p25mas_cv,0..999999999.999999999,19
+331,ind_087,Porcentaje de asistencia escolar de la población de 3 a 5 años,ae_3a5,0..999999999.999999999,19
+332,ind_087_li,Límite superior del Porcentaje de asistencia escolar de la población de 3 a 5 años,ae_3a5_li,0..999999999.999999999,19
+333,ind_087_ls,Límite inferior del Porcentaje de asistencia escolar de la población de 3 a 5 años,ae_3a5_ls,0..999999999.999999999,19
+334,ind_087_ee,Error estándar del Porcentaje de asistencia escolar de la población de 3 a 5 años,ae_3a5_ee,0..999999999.999999999,19
+335,ind_087_cv,Coeficiente de variación del Porcentaje de asistencia escolar de la población de 3 a 5 años,ae_3a5_cv,0..999999999.999999999,19
+336,ind_088,Porcentaje de asistencia escolar de la población de 6 a 11 años,ae_6a11,0..999999999.999999999,19
+337,ind_088_li,Límite superior del Porcentaje de asistencia escolar de la población de 6 a 11 años,ae_6a11_li,0..999999999.999999999,19
+338,ind_088_ls,Límite inferior del Porcentaje de asistencia escolar de la población de 6 a 11 años,ae_6a11_ls,0..999999999.999999999,19
+339,ind_088_ee,Error estándar del Porcentaje de asistencia escolar de la población de 6 a 11 años,ae_6a11_ee,0..999999999.999999999,19
+340,ind_088_cv,Coeficiente de variación del Porcentaje de asistencia escolar de la población de 6 a 11 años,ae_6a11_cv,0..999999999.999999999,19
+341,ind_089,Porcentaje de asistencia escolar de la población de 12 a 14 años,ae_12a14,0..999999999.999999999,19
+342,ind_089_li,Límite superior del Porcentaje de asistencia escolar de la población de 12 a 14 años,ae_12a14_li,0..999999999.999999999,19
+343,ind_089_ls,Límite inferior del Porcentaje de asistencia escolar de la población de 12 a 14 años,ae_12a14_ls,0..999999999.999999999,19
+344,ind_089_ee,Error estándar del Porcentaje de asistencia escolar de la población de 12 a 14 años,ae_12a14_ee,0..999999999.999999999,19
+345,ind_089_cv,Coeficiente de variación del Porcentaje de asistencia escolar de la población de 12 a 14 años,ae_12a14_cv,0..999999999.999999999,19
+346,ind_090,Porcentaje de asistencia escolar de la población de 15 a 24 años,ae_15a24,0..999999999.999999999,19
+347,ind_090_li,Límite superior del Porcentaje de asistencia escolar de la población de 15 a 24 años,ae_15a24_li,0..999999999.999999999,19
+348,ind_090_ls,Límite inferior del Porcentaje de asistencia escolar de la población de 15 a 24 años,ae_15a24_ls,0..999999999.999999999,19
+349,ind_090_ee,Error estándar del Porcentaje de asistencia escolar de la población de 15 a 24 años,ae_15a24_ee,0..999999999.999999999,19
+350,ind_090_cv,Coeficiente de variación del Porcentaje de asistencia escolar de la población de 15 a 24 años,ae_15a24_cv,0..999999999.999999999,19
+351,ind_091,Porcentaje de la población de 3 a 5 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_3a5,0..999999999.999999999,19
+352,ind_091_li,Límite superior del Porcentaje de la población de 3 a 5 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_3a5_li,0..999999999.999999999,19
+353,ind_091_ls,Límite inferior del Porcentaje de la población de 3 a 5 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_3a5_ls,0..999999999.999999999,19
+354,ind_091_ee,Error estándar del Porcentaje de la población de 3 a 5 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_3a5_ee,0..999999999.999999999,19
+355,ind_091_cv,Coeficiente de variación del Porcentaje de la población de 3 a 5 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_3a5_cv,0..999999999.999999999,19
+356,ind_092,Porcentaje de la población de 6 a 11 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_6a11,0..999999999.999999999,19
+357,ind_092_li,Límite superior del Porcentaje de la población de 6 a 11 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_6a11_li,0..999999999.999999999,19
+358,ind_092_ls,Límite inferior del Porcentaje de la población de 6 a 11 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_6a11_ls,0..999999999.999999999,19
+359,ind_092_ee,Error estándar del Porcentaje de la población de 6 a 11 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_6a11_ee,0..999999999.999999999,19
+360,ind_092_cv,Coeficiente de variación del Porcentaje de la población de 6 a 11 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_6a11_cv,0..999999999.999999999,19
+361,ind_093,Porcentaje de la población de 12 a 14 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_12a14,0..999999999.999999999,19
+362,ind_093_li,Límite superior del Porcentaje de la población de 12 a 14 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_12a14_li,0..999999999.999999999,19
+363,ind_093_ls,Límite inferior del Porcentaje de la población de 12 a 14 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_12a14_ls,0..999999999.999999999,19
+364,ind_093_ee,Error estándar del Porcentaje de la población de 12 a 14 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_12a14_ee,0..999999999.999999999,19
+365,ind_093_cv,Coeficiente de variación del Porcentaje de la población de 12 a 14 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_12a14_cv,0..999999999.999999999,19
+366,ind_094,Porcentaje de la población de 15 a 24 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_15a24,0..999999999.999999999,19
+367,ind_094_li,Límite superior del Porcentaje de la población de 15 a 24 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_15a24_li,0..999999999.999999999,19
+368,ind_094_ls,Límite inferior del Porcentaje de la población de 15 a 24 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_15a24_ls,0..999999999.999999999,19
+369,ind_094_ee,Error estándar del Porcentaje de la población de 15 a 24 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_15a24_ee,0..999999999.999999999,19
+370,ind_094_cv,Coeficiente de variación del Porcentaje de la población de 15 a 24 años que asiste a la escuela en un municipio o delegación distinto al de residencia,aeom_15a24_cv,0..999999999.999999999,19
+371,ind_095,Porcentaje de la población de 12 años y más económicamente activa (Total),pea,0..999999999.999999999,19
+372,ind_095_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa (Total),pea_li,0..999999999.999999999,19
+373,ind_095_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa (Total),pea_ls,0..999999999.999999999,19
+374,ind_095_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa (Total),pea_ee,0..999999999.999999999,19
+375,ind_095_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa (Total),pea_cv,0..999999999.999999999,19
+376,ind_096,Porcentaje de la población de 12 años y más económicamente activa (Hombres),pea_m,0..999999999.999999999,19
+377,ind_096_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa (Hombres),pea_m_li,0..999999999.999999999,19
+378,ind_096_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa (Hombres),pea_m_ls,0..999999999.999999999,19
+379,ind_096_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa (Hombres),pea_m_ee,0..999999999.999999999,19
+380,ind_096_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa (Hombres),pea_m_cv,0..999999999.999999999,19
+381,ind_097,Porcentaje de la población de 12 años y más económicamente activa (Mujeres),pea_f,0..999999999.999999999,19
+382,ind_097_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa (Mujeres),pea_f_li,0..999999999.999999999,19
+383,ind_097_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa (Mujeres),pea_f_ls,0..999999999.999999999,19
+384,ind_097_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa (Mujeres),pea_f_ee,0..999999999.999999999,19
+385,ind_097_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa (Mujeres),pea_f_cv,0..999999999.999999999,19
+386,ind_098,Porcentaje de la población de 12 años y más económicamente activa ocupada (Total),pocupada,0..999999999.999999999,19
+387,ind_098_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Total),pocupada_li,0..999999999.999999999,19
+388,ind_098_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Total),pocupada_ls,0..999999999.999999999,19
+389,ind_098_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa ocupada (Total),pocupada_ee,0..999999999.999999999,19
+390,ind_098_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa ocupada (Total),pocupada_cv,0..999999999.999999999,19
+391,ind_099,Porcentaje de la población de 12 años y más económicamente activa ocupada (Hombres),pocupada_m,0..999999999.999999999,19
+392,ind_099_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Hombres),pocupada_m_li,0..999999999.999999999,19
+393,ind_099_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Hombres),pocupada_m_ls,0..999999999.999999999,19
+394,ind_099_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa ocupada (Hombres),pocupada_m_ee,0..999999999.999999999,19
+395,ind_099_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa ocupada (Hombres),pocupada_m_cv,0..999999999.999999999,19
+396,ind_100,Porcentaje de la población de 12 años y más económicamente activa ocupada (Mujeres),pocupada_f,0..999999999.999999999,19
+397,ind_100_li,Límite superior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Mujeres),pocupada_f_li,0..999999999.999999999,19
+398,ind_100_ls,Límite inferior del Porcentaje de la población de 12 años y más económicamente activa ocupada (Mujeres),pocupada_f_ls,0..999999999.999999999,19
+399,ind_100_ee,Error estándar del Porcentaje de la población de 12 años y más económicamente activa ocupada (Mujeres),pocupada_f_ee,0..999999999.999999999,19
+400,ind_100_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más económicamente activa ocupada (Mujeres),pocupada_f_cv,0..999999999.999999999,19
+401,ind_139,Porcentaje de la población de 12 años y más no económicamente activa (Total),pnea,0..999999999.999999999,19
+402,ind_139_li,Límite superior del Porcentaje de la población de 12 años y más no económicamente activa (Total),pnea_li,0..999999999.999999999,19
+403,ind_139_ls,Límite inferior del Porcentaje de la población de 12 años y más no económicamente activa (Total),pnea_ls,0..999999999.999999999,19
+404,ind_139_ee,Error estándar del Porcentaje de la población de 12 años y más no económicamente activa (Total),pnea_ee,0..999999999.999999999,19
+405,ind_139_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más no económicamente activa (Total),pnea_cv,0..999999999.999999999,19
+406,ind_104,Porcentaje de la PNEA estudiante,pnea_est,0..999999999.999999999,19
+407,ind_104_li,Límite superior del Porcentaje de la PNEA estudiante,pnea_est_li,0..999999999.999999999,19
+408,ind_104_ls,Límite inferior del Porcentaje de la PNEA estudiante,pnea_est_ls,0..999999999.999999999,19
+409,ind_104_ee,Error estándar del Porcentaje de la PNEA estudiante,pnea_est_ee,0..999999999.999999999,19
+410,ind_104_cv,Coeficiente de variación del Porcentaje de la PNEA estudiante,pnea_est_cv,0..999999999.999999999,19
+411,ind_105,Porcentaje de la PNEA dedicada a los quehaceres del hogar,pnea_hogar,0..999999999.999999999,19
+412,ind_105_li,Límite superior del Porcentaje de la PNEA dedicada a los quehaceres del hogar,pnea_hogar_li,0..999999999.999999999,19
+413,ind_105_ls,Límite inferior del Porcentaje de la PNEA dedicada a los quehaceres del hogar,pnea_hogar_ls,0..999999999.999999999,19
+414,ind_105_ee,Error estándar del Porcentaje de la PNEA dedicada a los quehaceres del hogar,pnea_hogar_ee,0..999999999.999999999,19
+415,ind_105_cv,Coeficiente de variación del Porcentaje de la PNEA dedicada a los quehaceres del hogar,pnea_hogar_cv,0..999999999.999999999,19
+416,ind_106,Porcentaje de la PNEA jubilada o pensionada,pnea_jub,0..999999999.999999999,19
+417,ind_106_li,Límite superior del Porcentaje de la PNEA jubilada o pensionada,pnea_jub_li,0..999999999.999999999,19
+418,ind_106_ls,Límite inferior del Porcentaje de la PNEA jubilada o pensionada,pnea_jub_ls,0..999999999.999999999,19
+419,ind_106_ee,Error estándar del Porcentaje de la PNEA jubilada o pensionada,pnea_jub_ee,0..999999999.999999999,19
+420,ind_106_cv,Coeficiente de variación del Porcentaje de la PNEA jubilada o pensionada,pnea_jub_cv,0..999999999.999999999,19
+421,ind_107,Porcentaje de la PNEA con alguna limitación física o mental que les impide trabajar,pnea_disc,0..999999999.999999999,19
+422,ind_107_li,Límite superior del Porcentaje de la PNEA con alguna limitación física o mental que les impide trabajar,pnea_disc_li,0..999999999.999999999,19
+423,ind_107_ls,Límite inferior del Porcentaje de la PNEA con alguna limitación física o mental que les impide trabajar,pnea_disc_ls,0..999999999.999999999,19
+424,ind_107_ee,Error estándar del Porcentaje de la PNEA con alguna limitación física o mental que les impide trabajar,pnea_disc_ee,0..999999999.999999999,19
+425,ind_107_cv,Coeficiente de variación del Porcentaje de la PNEA con alguna limitación física o mental que les impide trabajar,pnea_disc_cv,0..999999999.999999999,19
+426,ind_108,Porcentaje de la PNEA en otras actividades no económicas,pnea_otro,0..999999999.999999999,19
+427,ind_108_li,Límite superior del Porcentaje de la PNEA en otras actividades no económicas,pnea_otro_li,0..999999999.999999999,19
+428,ind_108_ls,Límite inferior del Porcentaje de la PNEA en otras actividades no económicas,pnea_otro_ls,0..999999999.999999999,19
+429,ind_108_ee,Error estándar del Porcentaje de la PNEA en otras actividades no económicas,pnea_otro_ee,0..999999999.999999999,19
+430,ind_108_cv,Coeficiente de variación del Porcentaje de la PNEA en otras actividades no económicas,pnea_otro_cv,0..999999999.999999999,19
+431,ind_812,"Porcentaje de la población ocupada que labora en el sector económico de agricultura, ganadería, aprovechamiento forestal, pesca y caza",pocu_agri,0..999999999.999999999,19
+432,ind_812_li,"Límite superior del Porcentaje de la población ocupada que labora en el sector económico de agricultura, ganadería, aprovechamiento forestal, pesca y caza",pocu_agri_li,0..999999999.999999999,19
+433,ind_812_ls,"Límite inferior del Porcentaje de la población ocupada que labora en el sector económico de agricultura, ganadería, aprovechamiento forestal, pesca y caza",pocu_agri_ls,0..999999999.999999999,19
+434,ind_812_ee,"Error estándar del Porcentaje de la población ocupada que labora en el sector económico de agricultura, ganadería, aprovechamiento forestal, pesca y caza",pocu_agri_ee,0..999999999.999999999,19
+435,ind_812_cv,"Coeficiente de variación del Porcentaje de la población ocupada que labora en el sector económico de agricultura, ganadería, aprovechamiento forestal, pesca y caza",pocu_agri_cv,0..999999999.999999999,19
+436,ind_813,"Porcentaje de la población ocupada que labora en el sector económico de minería, industrias manufactureras, electricidad y agua",pocu_indus,0..999999999.999999999,19
+437,ind_813_li,"Límite superior del Porcentaje de la población ocupada que labora en el sector económico de minería, industrias manufactureras, electricidad y agua",pocu_indus_li,0..999999999.999999999,19
+438,ind_813_ls,"Límite inferior del Porcentaje de la población ocupada que labora en el sector económico de minería, industrias manufactureras, electricidad y agua",pocu_indus_ls,0..999999999.999999999,19
+439,ind_813_ee,"Error estándar del Porcentaje de la población ocupada que labora en el sector económico de minería, industrias manufactureras, electricidad y agua",pocu_indus_ee,0..999999999.999999999,19
+440,ind_813_cv,"Coeficiente de variación del Porcentaje de la población ocupada que labora en el sector económico de minería, industrias manufactureras, electricidad y agua",pocu_indus_cv,0..999999999.999999999,19
+441,ind_814,Porcentaje de la población ocupada que labora en el sector económico de construcción,pocu_const,0..999999999.999999999,19
+442,ind_814_li,Límite superior del Porcentaje de la población ocupada que labora en el sector económico de construcción,pocu_const_li,0..999999999.999999999,19
+443,ind_814_ls,Límite inferior del Porcentaje de la población ocupada que labora en el sector económico de construcción,pocu_const_ls,0..999999999.999999999,19
+444,ind_814_ee,Error estándar del Porcentaje de la población ocupada que labora en el sector económico de construcción,pocu_const_ee,0..999999999.999999999,19
+445,ind_814_cv,Coeficiente de variación del Porcentaje de la población ocupada que labora en el sector económico de construcción,pocu_const_cv,0..999999999.999999999,19
+446,ind_815,Porcentaje de la población ocupada que labora en el sector económico de comercio,pocu_comer,0..999999999.999999999,19
+447,ind_815_li,Límite superior del Porcentaje de la población ocupada que labora en el sector económico de comercio,pocu_comer_li,0..999999999.999999999,19
+448,ind_815_ls,Límite inferior del Porcentaje de la población ocupada que labora en el sector económico de comercio,pocu_comer_ls,0..999999999.999999999,19
+449,ind_815_ee,Error estándar del Porcentaje de la población ocupada que labora en el sector económico de comercio,pocu_comer_ee,0..999999999.999999999,19
+450,ind_815_cv,Coeficiente de variación del Porcentaje de la población ocupada que labora en el sector económico de comercio,pocu_comer_cv,0..999999999.999999999,19
+451,ind_816,"Porcentaje de la población ocupada que labora en el sector económico de servicios de transporte, comunicación, profesionales, financieros, sociales, gobierno y otros",pocu_serv,0..999999999.999999999,19
+452,ind_816_li,"Límite superior del Porcentaje de la población ocupada que labora en el sector económico de servicios de transporte, comunicación, profesionales, financieros, sociales, gobierno y otros",pocu_serv_li,0..999999999.999999999,19
+453,ind_816_ls,"Límite inferior del Porcentaje de la población ocupada que labora en el sector económico de servicios de transporte, comunicación, profesionales, financieros, sociales, gobierno y otros",pocu_serv_ls,0..999999999.999999999,19
+454,ind_816_ee,"Error estándar del Porcentaje de la población ocupada que labora en el sector económico de servicios de transporte, comunicación, profesionales, financieros, sociales, gobierno y otros",pocu_serv_ee,0..999999999.999999999,19
+455,ind_816_cv,"Coeficiente de variación del Porcentaje de la población ocupada que labora en el sector económico de servicios de transporte, comunicación, profesionales, financieros, sociales, gobierno y otros",pocu_serv_cv,0..999999999.999999999,19
+456,ind_112,Porcentaje de la población de 12 años y más casada,p12ym_casa,0..999999999.999999999,19
+457,ind_112_li,Límite superior del Porcentaje de la población de 12 años y más casada,p12ym_casa_li,0..999999999.999999999,19
+458,ind_112_ls,Límite inferior del Porcentaje de la población de 12 años y más casada,p12ym_casa_ls,0..999999999.999999999,19
+459,ind_112_ee,Error estándar del Porcentaje de la población de 12 años y más casada,p12ym_casa_ee,0..999999999.999999999,19
+460,ind_112_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más casada,p12ym_casa_cv,0..999999999.999999999,19
+461,ind_113,Porcentaje de la población de 12 años y más soltera,p12ym_solt,0..999999999.999999999,19
+462,ind_113_li,Límite superior del Porcentaje de la población de 12 años y más soltera,p12ym_solt_li,0..999999999.999999999,19
+463,ind_113_ls,Límite inferior del Porcentaje de la población de 12 años y más soltera,p12ym_solt_ls,0..999999999.999999999,19
+464,ind_113_ee,Error estándar del Porcentaje de la población de 12 años y más soltera,p12ym_solt_ee,0..999999999.999999999,19
+465,ind_113_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más soltera,p12ym_solt_cv,0..999999999.999999999,19
+466,ind_114,Porcentaje de la población de 12 años y más en unión libre,p12ym_ulib,0..999999999.999999999,19
+467,ind_114_li,Límite superior del Porcentaje de la población de 12 años y más en unión libre,p12ym_ulib_li,0..999999999.999999999,19
+468,ind_114_ls,Límite inferior del Porcentaje de la población de 12 años y más en unión libre,p12ym_ulib_ls,0..999999999.999999999,19
+469,ind_114_ee,Error estándar del Porcentaje de la población de 12 años y más en unión libre,p12ym_ulib_ee,0..999999999.999999999,19
+470,ind_114_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más en unión libre,p12ym_ulib_cv,0..999999999.999999999,19
+471,ind_115,Porcentaje de la población de 12 años y más separada,p12ym_sepa,0..999999999.999999999,19
+472,ind_115_li,Límite superior del Porcentaje de la población de 12 años y más separada,p12ym_sepa_li,0..999999999.999999999,19
+473,ind_115_ls,Límite inferior del Porcentaje de la población de 12 años y más separada,p12ym_sepa_ls,0..999999999.999999999,19
+474,ind_115_ee,Error estándar del Porcentaje de la población de 12 años y más separada,p12ym_sepa_ee,0..999999999.999999999,19
+475,ind_115_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más separada,p12ym_sepa_cv,0..999999999.999999999,19
+476,ind_116,Porcentaje de la población de 12 años y más divorciada,p12ym_divo,0..999999999.999999999,19
+477,ind_116_li,Límite superior del Porcentaje de la población de 12 años y más divorciada,p12ym_divo_li,0..999999999.999999999,19
+478,ind_116_ls,Límite inferior del Porcentaje de la población de 12 años y más divorciada,p12ym_divo_ls,0..999999999.999999999,19
+479,ind_116_ee,Error estándar del Porcentaje de la población de 12 años y más divorciada,p12ym_divo_ee,0..999999999.999999999,19
+480,ind_116_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más divorciada,p12ym_divo_cv,0..999999999.999999999,19
+481,ind_117,Porcentaje de la población de 12 años y más viuda,p12ym_viud,0..999999999.999999999,19
+482,ind_117_li,Límite superior del Porcentaje de la población de 12 años y más viuda,p12ym_viud_li,0..999999999.999999999,19
+483,ind_117_ls,Límite inferior del Porcentaje de la población de 12 años y más viuda,p12ym_viud_ls,0..999999999.999999999,19
+484,ind_117_ee,Error estándar del Porcentaje de la población de 12 años y más viuda,p12ym_viud_ee,0..999999999.999999999,19
+485,ind_117_cv,Coeficiente de variación del Porcentaje de la población de 12 años y más viuda,p12ym_viud_cv,0..999999999.999999999,19
+486,ind_119,Porcentaje de la población afiliada a servicios de salud,pder_ss,0..999999999.999999999,19
+487,ind_119_li,Límite superior del Porcentaje de la población afiliada a servicios de salud,pder_ss_li,0..999999999.999999999,19
+488,ind_119_ls,Límite inferior del Porcentaje de la población afiliada a servicios de salud,pder_ss_ls,0..999999999.999999999,19
+489,ind_119_ee,Error estándar del Porcentaje de la población afiliada a servicios de salud,pder_ss_ee,0..999999999.999999999,19
+490,ind_119_cv,Coeficiente de variación del Porcentaje de la población afiliada a servicios de salud,pder_ss_cv,0..999999999.999999999,19
+491,ind_123,Porcentaje de la población afiliada al seguro popular,pder_segp,0..999999999.999999999,19
+492,ind_123_li,Límite superior del Porcentaje de la población afiliada al seguro popular,pder_segp_li,0..999999999.999999999,19
+493,ind_123_ls,Límite inferior del Porcentaje de la población afiliada al seguro popular,pder_segp_ls,0..999999999.999999999,19
+494,ind_123_ee,Error estándar del Porcentaje de la población afiliada al seguro popular,pder_segp_ee,0..999999999.999999999,19
+495,ind_123_cv,Coeficiente de variación del Porcentaje de la población afiliada al seguro popular,pder_segp_cv,0..999999999.999999999,19
+496,ind_121,Porcentaje de la población afiliada al IMSS,pder_imss,0..999999999.999999999,19
+497,ind_121_li,Límite superior del Porcentaje de la población afiliada al IMSS,pder_imss_li,0..999999999.999999999,19
+498,ind_121_ls,Límite inferior del Porcentaje de la población afiliada al IMSS,pder_imss_ls,0..999999999.999999999,19
+499,ind_121_ee,Error estándar del Porcentaje de la población afiliada al IMSS,pder_imss_ee,0..999999999.999999999,19
+500,ind_121_cv,Coeficiente de variación del Porcentaje de la población afiliada al IMSS,pder_imss_cv,0..999999999.999999999,19
+501,ind_122,Porcentaje de la población afiliada al ISSSTE,pder_issst,0..999999999.999999999,19
+502,ind_122_li,Límite superior del Porcentaje de la población afiliada al ISSSTE,pder_issst_li,0..999999999.999999999,19
+503,ind_122_ls,Límite inferior del Porcentaje de la población afiliada al ISSSTE,pder_issst_ls,0..999999999.999999999,19
+504,ind_122_ee,Error estándar del Porcentaje de la población afiliada al ISSSTE,pder_issst_ee,0..999999999.999999999,19
+505,ind_122_cv,Coeficiente de variación del Porcentaje de la población afiliada al ISSSTE,pder_issst_cv,0..999999999.999999999,19
+506,ind_124,"Porcentaje de la población afiliada a Pemex, Defensa o Marina",pder_pemex,0..999999999.999999999,19
+507,ind_124_li,"Límite superior del Porcentaje de la población afiliada a Pemex, Defensa o Marina",pder_pemex_li,0..999999999.999999999,19
+508,ind_124_ls,"Límite inferior del Porcentaje de la población afiliada a Pemex, Defensa o Marina",pder_pemex_ls,0..999999999.999999999,19
+509,ind_124_ee,"Error estándar del Porcentaje de la población afiliada a Pemex, Defensa o Marina",pder_pemex_ee,0..999999999.999999999,19
+510,ind_124_cv,"Coeficiente de variación del Porcentaje de la población afiliada a Pemex, Defensa o Marina",pder_pemex_cv,0..999999999.999999999,19
+511,ind_120,Porcentaje de la población afiliada a servicios médicos por seguro privado,pder_spriv,0..999999999.999999999,19
+512,ind_120_li,Límite superior del Porcentaje de la población afiliada a servicios médicos por seguro privado,pder_spriv_li,0..999999999.999999999,19
+513,ind_120_ls,Límite inferior del Porcentaje de la población afiliada a servicios médicos por seguro privado,pder_spriv_ls,0..999999999.999999999,19
+514,ind_120_ee,Error estándar del Porcentaje de la población afiliada a servicios médicos por seguro privado,pder_spriv_ee,0..999999999.999999999,19
+515,ind_120_cv,Coeficiente de variación del Porcentaje de la población afiliada a servicios médicos por seguro privado,pder_spriv_cv,0..999999999.999999999,19
+516,ind_125,Porcentaje de la población afiliada a servicios médicos por otra institución,pder_otro,0..999999999.999999999,19
+517,ind_125_li,Límite superior del Porcentaje de la población afiliada a servicios médicos por otra institución,pder_otro_li,0..999999999.999999999,19
+518,ind_125_ls,Límite inferior del Porcentaje de la población afiliada a servicios médicos por otra institución,pder_otro_ls,0..999999999.999999999,19
+519,ind_125_ee,Error estándar del Porcentaje de la población afiliada a servicios médicos por otra institución,pder_otro_ee,0..999999999.999999999,19
+520,ind_125_cv,Coeficiente de variación del Porcentaje de la población afiliada a servicios médicos por otra institución,pder_otro_cv,0..999999999.999999999,19
+521,ind_141,Porcentaje de la población que se considera indígena,p_con_ind,0..999999999.999999999,19
+522,ind_141_li,Límite superior del Porcentaje de la población que se considera indígena,p_con_ind_li,0..999999999.999999999,19
+523,ind_141_ls,Límite inferior del Porcentaje de la población que se considera indígena,p_con_ind_ls,0..999999999.999999999,19
+524,ind_141_ee,Error estándar del Porcentaje de la población que se considera indígena,p_con_ind_ee,0..999999999.999999999,19
+525,ind_141_cv,Coeficiente de variación del Porcentaje de la población que se considera indígena,p_con_ind_cv,0..999999999.999999999,19
+526,ind_126,Porcentaje de la población de 3 años y más que habla alguna lengua indígena,p3ym_hli,0..999999999.999999999,19
+527,ind_126_li,Límite superior del Porcentaje de la población de 3 años y más que habla alguna lengua indígena,p3ym_hli_li,0..999999999.999999999,19
+528,ind_126_ls,Límite inferior del Porcentaje de la población de 3 años y más que habla alguna lengua indígena,p3ym_hli_ls,0..999999999.999999999,19
+529,ind_126_ee,Error estándar del Porcentaje de la población de 3 años y más que habla alguna lengua indígena,p3ym_hli_ee,0..999999999.999999999,19
+530,ind_126_cv,Coeficiente de variación del Porcentaje de la población de 3 años y más que habla alguna lengua indígena,p3ym_hli_cv,0..999999999.999999999,19
+531,ind_127,"Porcentaje de la población que no habla español, respecto a la población de 3 años y más, hablante de lengua indígena",p3hlinhe,0..999999999.999999999,19
+532,ind_127_li,"Límite superior del Porcentaje de la población que no habla español, respecto a la población de 3 años y más, hablante de lengua indígena",p3hlinhe_li,0..999999999.999999999,19
+533,ind_127_ls,"Límite inferior del Porcentaje de la población que no habla español, respecto a la población de 3 años y más, hablante de lengua indígena",p3hlinhe_ls,0..999999999.999999999,19
+534,ind_127_ee,"Error estándar del Porcentaje de la población que no habla español, respecto a la población de 3 años y más, hablante de lengua indígena",p3hlinhe_ee,0..999999999.999999999,19
+535,ind_127_cv,"Coeficiente de variación del Porcentaje de la población que no habla español, respecto a la población de 3 años y más, hablante de lengua indígena",p3hlinhe_cv,0..999999999.999999999,19
+536,ind_128,Porcentaje de la población que se considera afrodescendiente,p_afro,0..999999999.999999999,19
+537,ind_128_li,Límite superior del Porcentaje de la población que se considera afrodescendiente,p_afro_li,0..999999999.999999999,19
+538,ind_128_ls,Límite inferior del Porcentaje de la población que se considera afrodescendiente,p_afro_ls,0..999999999.999999999,19
+539,ind_128_ee,Error estándar del Porcentaje de la población que se considera afrodescendiente,p_afro_ee,0..999999999.999999999,19
+540,ind_128_cv,Coeficiente de variación del Porcentaje de la población que se considera afrodescendiente,p_afro_cv,0..999999999.999999999,19

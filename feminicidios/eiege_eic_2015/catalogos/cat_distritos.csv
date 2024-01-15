@@ -1,0 +1,334 @@
+﻿cve_ent,desc_ent,cve_distrito,desc_distrito
+00,Estados Unidos Mexicanos,000,Total Nacional
+01,Aguascalientes,000,Total Estatal
+01,Aguascalientes,001,Distrito 001
+01,Aguascalientes,002,Distrito 002
+01,Aguascalientes,003,Distrito 003
+02,Baja California,000,Total Estatal
+02,Baja California,001,Distrito 001
+02,Baja California,002,Distrito 002
+02,Baja California,003,Distrito 003
+02,Baja California,004,Distrito 004
+02,Baja California,005,Distrito 005
+02,Baja California,006,Distrito 006
+02,Baja California,007,Distrito 007
+02,Baja California,008,Distrito 008
+03,Baja California Sur,000,Total Estatal
+03,Baja California Sur,001,Distrito 001
+03,Baja California Sur,002,Distrito 002
+04,Campeche,000,Total Estatal
+04,Campeche,001,Distrito 001
+04,Campeche,002,Distrito 002
+05,Coahuila de Zaragoza,000,Total Estatal
+05,Coahuila de Zaragoza,001,Distrito 001
+05,Coahuila de Zaragoza,002,Distrito 002
+05,Coahuila de Zaragoza,003,Distrito 003
+05,Coahuila de Zaragoza,004,Distrito 004
+05,Coahuila de Zaragoza,005,Distrito 005
+05,Coahuila de Zaragoza,006,Distrito 006
+05,Coahuila de Zaragoza,007,Distrito 007
+06,Colima,000,Total Estatal
+06,Colima,001,Distrito 001
+06,Colima,002,Distrito 002
+07,Chiapas,000,Total Estatal
+07,Chiapas,001,Distrito 001
+07,Chiapas,002,Distrito 002
+07,Chiapas,003,Distrito 003
+07,Chiapas,004,Distrito 004
+07,Chiapas,005,Distrito 005
+07,Chiapas,006,Distrito 006
+07,Chiapas,007,Distrito 007
+07,Chiapas,008,Distrito 008
+07,Chiapas,009,Distrito 009
+07,Chiapas,010,Distrito 010
+07,Chiapas,011,Distrito 011
+07,Chiapas,012,Distrito 012
+07,Chiapas,013,Distrito 013
+08,Chihuahua,000,Total Estatal
+08,Chihuahua,001,Distrito 001
+08,Chihuahua,002,Distrito 002
+08,Chihuahua,003,Distrito 003
+08,Chihuahua,004,Distrito 004
+08,Chihuahua,005,Distrito 005
+08,Chihuahua,006,Distrito 006
+08,Chihuahua,007,Distrito 007
+08,Chihuahua,008,Distrito 008
+08,Chihuahua,009,Distrito 009
+09,Ciudad de México,000,Total Estatal
+09,Ciudad de México,001,Distrito 001
+09,Ciudad de México,002,Distrito 002
+09,Ciudad de México,003,Distrito 003
+09,Ciudad de México,004,Distrito 004
+09,Ciudad de México,005,Distrito 005
+09,Ciudad de México,006,Distrito 006
+09,Ciudad de México,007,Distrito 007
+09,Ciudad de México,008,Distrito 008
+09,Ciudad de México,009,Distrito 009
+09,Ciudad de México,010,Distrito 010
+09,Ciudad de México,011,Distrito 011
+09,Ciudad de México,012,Distrito 012
+09,Ciudad de México,013,Distrito 013
+09,Ciudad de México,014,Distrito 014
+09,Ciudad de México,015,Distrito 015
+09,Ciudad de México,016,Distrito 016
+09,Ciudad de México,017,Distrito 017
+09,Ciudad de México,018,Distrito 018
+09,Ciudad de México,019,Distrito 019
+09,Ciudad de México,020,Distrito 020
+09,Ciudad de México,021,Distrito 021
+09,Ciudad de México,022,Distrito 022
+09,Ciudad de México,023,Distrito 023
+09,Ciudad de México,024,Distrito 024
+10,Durango,000,Total Estatal
+10,Durango,001,Distrito 001
+10,Durango,002,Distrito 002
+10,Durango,003,Distrito 003
+10,Durango,004,Distrito 004
+11,Guanajuato,000,Total Estatal
+11,Guanajuato,001,Distrito 001
+11,Guanajuato,002,Distrito 002
+11,Guanajuato,003,Distrito 003
+11,Guanajuato,004,Distrito 004
+11,Guanajuato,005,Distrito 005
+11,Guanajuato,006,Distrito 006
+11,Guanajuato,007,Distrito 007
+11,Guanajuato,008,Distrito 008
+11,Guanajuato,009,Distrito 009
+11,Guanajuato,010,Distrito 010
+11,Guanajuato,011,Distrito 011
+11,Guanajuato,012,Distrito 012
+11,Guanajuato,013,Distrito 013
+11,Guanajuato,014,Distrito 014
+11,Guanajuato,015,Distrito 015
+12,Guerrero,000,Total Estatal
+12,Guerrero,001,Distrito 001
+12,Guerrero,002,Distrito 002
+12,Guerrero,003,Distrito 003
+12,Guerrero,004,Distrito 004
+12,Guerrero,005,Distrito 005
+12,Guerrero,006,Distrito 006
+12,Guerrero,007,Distrito 007
+12,Guerrero,008,Distrito 008
+12,Guerrero,009,Distrito 009
+13,Hidalgo,000,Total Estatal
+13,Hidalgo,001,Distrito 001
+13,Hidalgo,002,Distrito 002
+13,Hidalgo,003,Distrito 003
+13,Hidalgo,004,Distrito 004
+13,Hidalgo,005,Distrito 005
+13,Hidalgo,006,Distrito 006
+13,Hidalgo,007,Distrito 007
+14,Jalisco,000,Total Estatal
+14,Jalisco,001,Distrito 001
+14,Jalisco,002,Distrito 002
+14,Jalisco,003,Distrito 003
+14,Jalisco,004,Distrito 004
+14,Jalisco,005,Distrito 005
+14,Jalisco,006,Distrito 006
+14,Jalisco,007,Distrito 007
+14,Jalisco,008,Distrito 008
+14,Jalisco,009,Distrito 009
+14,Jalisco,010,Distrito 010
+14,Jalisco,011,Distrito 011
+14,Jalisco,012,Distrito 012
+14,Jalisco,013,Distrito 013
+14,Jalisco,014,Distrito 014
+14,Jalisco,015,Distrito 015
+14,Jalisco,016,Distrito 016
+14,Jalisco,017,Distrito 017
+14,Jalisco,018,Distrito 018
+14,Jalisco,019,Distrito 019
+14,Jalisco,020,Distrito 020
+15,México,000,Total Estatal
+15,México,001,Distrito 001
+15,México,002,Distrito 002
+15,México,003,Distrito 003
+15,México,004,Distrito 004
+15,México,005,Distrito 005
+15,México,006,Distrito 006
+15,México,007,Distrito 007
+15,México,008,Distrito 008
+15,México,009,Distrito 009
+15,México,010,Distrito 010
+15,México,011,Distrito 011
+15,México,012,Distrito 012
+15,México,013,Distrito 013
+15,México,014,Distrito 014
+15,México,015,Distrito 015
+15,México,016,Distrito 016
+15,México,017,Distrito 017
+15,México,018,Distrito 018
+15,México,019,Distrito 019
+15,México,020,Distrito 020
+15,México,021,Distrito 021
+15,México,022,Distrito 022
+15,México,023,Distrito 023
+15,México,024,Distrito 024
+15,México,025,Distrito 025
+15,México,026,Distrito 026
+15,México,027,Distrito 027
+15,México,028,Distrito 028
+15,México,029,Distrito 029
+15,México,030,Distrito 030
+15,México,031,Distrito 031
+15,México,032,Distrito 032
+15,México,033,Distrito 033
+15,México,034,Distrito 034
+15,México,035,Distrito 035
+15,México,036,Distrito 036
+15,México,037,Distrito 037
+15,México,038,Distrito 038
+15,México,039,Distrito 039
+15,México,040,Distrito 040
+15,México,041,Distrito 041
+16,Michoacán de Ocampo,000,Total Estatal
+16,Michoacán de Ocampo,001,Distrito 001
+16,Michoacán de Ocampo,002,Distrito 002
+16,Michoacán de Ocampo,003,Distrito 003
+16,Michoacán de Ocampo,004,Distrito 004
+16,Michoacán de Ocampo,005,Distrito 005
+16,Michoacán de Ocampo,006,Distrito 006
+16,Michoacán de Ocampo,007,Distrito 007
+16,Michoacán de Ocampo,008,Distrito 008
+16,Michoacán de Ocampo,009,Distrito 009
+16,Michoacán de Ocampo,010,Distrito 010
+16,Michoacán de Ocampo,011,Distrito 011
+16,Michoacán de Ocampo,012,Distrito 012
+17,Morelos,000,Total Estatal
+17,Morelos,001,Distrito 001
+17,Morelos,002,Distrito 002
+17,Morelos,003,Distrito 003
+17,Morelos,004,Distrito 004
+17,Morelos,005,Distrito 005
+18,Nayarit,000,Total Estatal
+18,Nayarit,001,Distrito 001
+18,Nayarit,002,Distrito 002
+18,Nayarit,003,Distrito 003
+19,Nuevo León,000,Total Estatal
+19,Nuevo León,001,Distrito 001
+19,Nuevo León,002,Distrito 002
+19,Nuevo León,003,Distrito 003
+19,Nuevo León,004,Distrito 004
+19,Nuevo León,005,Distrito 005
+19,Nuevo León,006,Distrito 006
+19,Nuevo León,007,Distrito 007
+19,Nuevo León,008,Distrito 008
+19,Nuevo León,009,Distrito 009
+19,Nuevo León,010,Distrito 010
+19,Nuevo León,011,Distrito 011
+19,Nuevo León,012,Distrito 012
+20,Oaxaca,000,Total Estatal
+20,Oaxaca,001,Distrito 001
+20,Oaxaca,002,Distrito 002
+20,Oaxaca,003,Distrito 003
+20,Oaxaca,004,Distrito 004
+20,Oaxaca,005,Distrito 005
+20,Oaxaca,006,Distrito 006
+20,Oaxaca,007,Distrito 007
+20,Oaxaca,008,Distrito 008
+20,Oaxaca,009,Distrito 009
+20,Oaxaca,010,Distrito 010
+21,Puebla,000,Total Estatal
+21,Puebla,001,Distrito 001
+21,Puebla,002,Distrito 002
+21,Puebla,003,Distrito 003
+21,Puebla,004,Distrito 004
+21,Puebla,005,Distrito 005
+21,Puebla,006,Distrito 006
+21,Puebla,007,Distrito 007
+21,Puebla,008,Distrito 008
+21,Puebla,009,Distrito 009
+21,Puebla,010,Distrito 010
+21,Puebla,011,Distrito 011
+21,Puebla,012,Distrito 012
+21,Puebla,013,Distrito 013
+21,Puebla,014,Distrito 014
+21,Puebla,015,Distrito 015
+22,Querétaro,000,Total Estatal
+22,Querétaro,001,Distrito 001
+22,Querétaro,002,Distrito 002
+22,Querétaro,003,Distrito 003
+22,Querétaro,004,Distrito 004
+22,Querétaro,005,Distrito 005
+23,Quintana Roo,000,Total Estatal
+23,Quintana Roo,001,Distrito 001
+23,Quintana Roo,002,Distrito 002
+23,Quintana Roo,003,Distrito 003
+23,Quintana Roo,004,Distrito 004
+24,San Luis Potosí,000,Total Estatal
+24,San Luis Potosí,001,Distrito 001
+24,San Luis Potosí,002,Distrito 002
+24,San Luis Potosí,003,Distrito 003
+24,San Luis Potosí,004,Distrito 004
+24,San Luis Potosí,005,Distrito 005
+24,San Luis Potosí,006,Distrito 006
+24,San Luis Potosí,007,Distrito 007
+25,Sinaloa,000,Total Estatal
+25,Sinaloa,001,Distrito 001
+25,Sinaloa,002,Distrito 002
+25,Sinaloa,003,Distrito 003
+25,Sinaloa,004,Distrito 004
+25,Sinaloa,005,Distrito 005
+25,Sinaloa,006,Distrito 006
+25,Sinaloa,007,Distrito 007
+26,Sonora,000,Total Estatal
+26,Sonora,001,Distrito 001
+26,Sonora,002,Distrito 002
+26,Sonora,003,Distrito 003
+26,Sonora,004,Distrito 004
+26,Sonora,005,Distrito 005
+26,Sonora,006,Distrito 006
+26,Sonora,007,Distrito 007
+27,Tabasco,000,Total Estatal
+27,Tabasco,001,Distrito 001
+27,Tabasco,002,Distrito 002
+27,Tabasco,003,Distrito 003
+27,Tabasco,004,Distrito 004
+27,Tabasco,005,Distrito 005
+27,Tabasco,006,Distrito 006
+28,Tamaulipas,000,Total Estatal
+28,Tamaulipas,001,Distrito 001
+28,Tamaulipas,002,Distrito 002
+28,Tamaulipas,003,Distrito 003
+28,Tamaulipas,004,Distrito 004
+28,Tamaulipas,005,Distrito 005
+28,Tamaulipas,006,Distrito 006
+28,Tamaulipas,007,Distrito 007
+28,Tamaulipas,008,Distrito 008
+28,Tamaulipas,009,Distrito 009
+29,Tamaulipas,000,Total Estatal
+29,Tamaulipas,001,Distrito 001
+29,Tamaulipas,002,Distrito 002
+29,Tamaulipas,003,Distrito 003
+30,Veracruz de Ignacio de la Llave,000,Total Estatal
+30,Veracruz de Ignacio de la Llave,001,Distrito 001
+30,Veracruz de Ignacio de la Llave,002,Distrito 002
+30,Veracruz de Ignacio de la Llave,003,Distrito 003
+30,Veracruz de Ignacio de la Llave,004,Distrito 004
+30,Veracruz de Ignacio de la Llave,005,Distrito 005
+30,Veracruz de Ignacio de la Llave,006,Distrito 006
+30,Veracruz de Ignacio de la Llave,007,Distrito 007
+30,Veracruz de Ignacio de la Llave,008,Distrito 008
+30,Veracruz de Ignacio de la Llave,009,Distrito 009
+30,Veracruz de Ignacio de la Llave,010,Distrito 010
+30,Veracruz de Ignacio de la Llave,011,Distrito 011
+30,Veracruz de Ignacio de la Llave,012,Distrito 012
+30,Veracruz de Ignacio de la Llave,013,Distrito 013
+30,Veracruz de Ignacio de la Llave,014,Distrito 014
+30,Veracruz de Ignacio de la Llave,015,Distrito 015
+30,Veracruz de Ignacio de la Llave,016,Distrito 016
+30,Veracruz de Ignacio de la Llave,017,Distrito 017
+30,Veracruz de Ignacio de la Llave,018,Distrito 018
+30,Veracruz de Ignacio de la Llave,019,Distrito 019
+30,Veracruz de Ignacio de la Llave,020,Distrito 020
+31,Yucatán,000,Total Estatal
+31,Yucatán,001,Distrito 001
+31,Yucatán,002,Distrito 002
+31,Yucatán,003,Distrito 003
+31,Yucatán,004,Distrito 004
+31,Yucatán,005,Distrito 005
+32,Zacatecas,000,Total Estatal
+32,Zacatecas,001,Distrito 001
+32,Zacatecas,002,Distrito 002
+32,Zacatecas,003,Distrito 003
+32,Zacatecas,004,Distrito 004

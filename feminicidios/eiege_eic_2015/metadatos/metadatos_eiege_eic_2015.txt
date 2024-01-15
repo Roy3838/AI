@@ -1,0 +1,29 @@
+﻿identifier: MEX-INEGI.40.201.01-EI-2015
+
+title: Estadísticas Intercensales a Escalas Geoelectorales
+
+description: 
+INEGI. Encuesta Intercensal 2015. SNIEG.
+Conjunto de indicadores sociodemográficos a nivel distrito electoral federal, según la cartografía distrital del INE, provenientes de la Encuesta Intercensal 2015
+
+modified: 2015-12-08
+
+publisher: Instituto Nacional de Estadística y Geografía, INEGI
+
+mbox: atencion.usuarios@inegi.org.mx
+
+license: http://www.beta.inegi.org.mx/inegi/terminos.html
+
+dataDictionary: http://gaia.inegi.org.mx/mdm6/docs/geoelectorales/EIEGE_EIC2015_PSDM_Metadatos.pdf
+
+keyword: estadísticas intercensales, escalas geoelectorales, distritos electorales, características de las viviendas, características de las personas, indicadores sociodemográficos, nacionalidad, fecundidad, natalidad, mortalidad, vivienda, ocupantes, servicios en la vivienda, tenencia, materiales de construcción precarios, tecnologías de información, ahorro de energía, separación de residuos, características educativas, nivel de escolaridad, tasa de alfabetización, asistencia escolar, movilidad escolar, características económicas, población económicamente activa, pea, población económicamente activa ocupada, población no económicamente activa, pnea, sector de actividad económica, situación conyugal, servicios de salud, etnicidad, lengua indígena, afrodescendiente
+
+contactPoint: Lic. José de Jesús Esquivel de la Rosa, 01800 111 4634
+
+temporal: 2015-03-15-2015-03-15
+
+spatial: Estados Unidos Mexicanos
+
+accrualPeriodicity: Única
+
+distribution: http://www.beta.inegi.org.mx/proyectos/enchogares/especiales/intercensal/
