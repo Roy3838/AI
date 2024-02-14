@@ -1,3 +1,6 @@
 detect_triangles/model.pth
 detect_triangles/model2.pth
 data/*
+
+
+EconomCirc/key.py
