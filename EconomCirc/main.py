@@ -1,11 +1,3 @@
-
-
-"""
-Code designed to call OpenAI API with GPT-4, using an image prompt and a text prompt to generate a response.
-
-"""
-
-# import key from non-tracked file
 from key import key
 from openai import OpenAI
 import os
