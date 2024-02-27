@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/repos/AI/keras/mlruns/0/4b4d74458c7b4b09b113776ff56ee41a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b4d74458c7b4b09b113776ff56ee41a
+run_name: rebellious-sow-37
+run_uuid: 4b4d74458c7b4b09b113776ff56ee41a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708624734358
+status: 1
+tags: []
+user_id: jay

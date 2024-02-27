@@ -7,6 +7,18 @@ MAX_TRIANGLE = 60
 ANGLE_SIMILARITY_THRESHOLD = 20  # Degrees within which angles should be similar
 
 # Function to generate a random triangle and return its image and vertices
+def add_square(image):
+    """
+    Receives an image and adds a square to it sometimes
+    """
+    num_squares = np.random.randint(0, 4)
+    for _ in range(num_squares):
+        x = np.random.randint(0, image.shape[0] - 1)
+        y = np.random.randint(0, image.shape[1] - 1)
+        size = np.random.randint(10, 20)
+        image[x:x+size, y:y+size] = 255
+        
+    return image
 
 def generate_triangle(image_size):
     def calculate_angle(v1, v2, v3):
@@ -46,27 +58,39 @@ def generate_triangle(image_size):
         if np.all(np.abs([angle1, angle2, angle3] - np.mean([angle1, angle2, angle3])) < ANGLE_SIMILARITY_THRESHOLD):
             vertices = np.array([[v1, v2, v3]], dtype=np.int32)
             cv2.fillPoly(image, vertices, 255)
-            return image, vertices
+            return add_square(image), vertices
 
-def add_noise(image):
+def add_noise_and_distort_vertices(image, vertices):
     # Apply Gaussian blur
     blurred_image = cv2.GaussianBlur(image, (5, 5), 0)
 
     # Shape of the image
-    rows, cols = image.shape
+    rows, cols= image.shape  
 
     # Generate offset arrays
     offset_x = (5.0 * np.sin(2 * np.pi * np.arange(rows)[:, None] / 60)).astype(int)
     offset_y = (5.0 * np.cos(2 * np.pi * np.arange(cols) / 60)).astype(int)
 
-    # Apply offsets
+    # Apply offsets to the image
     distorted_indices_x = (np.arange(rows)[:, None] + offset_x) % rows
     distorted_indices_y = (np.arange(cols) + offset_y) % cols
-
-    # Use advanced indexing to create the distorted image
     distortion = blurred_image[distorted_indices_x, distorted_indices_y]
 
-    return distortion.astype(np.uint8)
+    # Adjust vertices handling based on the provided structure
+    new_vertices = np.zeros_like(vertices)
+    for i, vertex_group in enumerate(vertices):
+        for j, vertex in enumerate(vertex_group):
+            x, y = vertex
+            # Ensure the vertex position is within the image bounds
+            if 0 <= x < rows and 0 <= y < cols:
+                distorted_x = (x + offset_x[x, 0]) % rows
+                distorted_y = (y + offset_y[y]) % cols
+                new_vertices[i][j] = [distorted_x, distorted_y]
+            else:
+                # If the vertex is out of bounds after distortion, handle as needed
+                new_vertices[i][j] = vertex
+
+    return distortion.astype(np.uint8), new_vertices
 
 
 
@@ -79,10 +103,10 @@ def create_dataset(num_images, large_image_size,  dataset_path):
     labels = []
     for i in range(num_images):
         image, vertices = generate_triangle(large_image_size, )
-        noisy_image = add_noise(image)  # Add noise to the image
+        noisy_image, new_vertices = add_noise_and_distort_vertices(image, vertices)  # Add noise to the image
         file_name = f'triangle_{i}.png'
         cv2.imwrite(os.path.join(dataset_path, file_name), noisy_image)
-        labels.append({'file_name': file_name, 'vertices': vertices.tolist()})
+        labels.append({'file_name': file_name, 'vertices': new_vertices.tolist()})
 
     return labels
 

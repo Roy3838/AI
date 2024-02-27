@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/repos/AI/keras/mlruns/0/5aa148b7a3664556b9acbb7a653ab050/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5aa148b7a3664556b9acbb7a653ab050
+run_name: angry-stag-235
+run_uuid: 5aa148b7a3664556b9acbb7a653ab050
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708625714548
+status: 1
+tags: []
+user_id: jay

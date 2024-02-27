@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a442048227e04392a4cb5d14f8fcd51a/artifacts
+end_time: 1708987709432
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a442048227e04392a4cb5d14f8fcd51a
+run_name: clean-dove-838
+run_uuid: a442048227e04392a4cb5d14f8fcd51a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708987638253
+status: 3
+tags: []
+user_id: jay

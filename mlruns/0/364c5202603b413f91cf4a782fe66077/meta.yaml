@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/364c5202603b413f91cf4a782fe66077/artifacts
+end_time: 1708985018118
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 364c5202603b413f91cf4a782fe66077
+run_name: auspicious-moth-331
+run_uuid: 364c5202603b413f91cf4a782fe66077
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708984333770
+status: 3
+tags: []
+user_id: jay

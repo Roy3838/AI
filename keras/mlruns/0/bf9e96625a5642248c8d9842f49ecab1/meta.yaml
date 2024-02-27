@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/repos/AI/keras/mlruns/0/bf9e96625a5642248c8d9842f49ecab1/artifacts
+end_time: 1708626746534
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bf9e96625a5642248c8d9842f49ecab1
+run_name: defiant-frog-541
+run_uuid: bf9e96625a5642248c8d9842f49ecab1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708626066579
+status: 3
+tags: []
+user_id: jay

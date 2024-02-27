@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/65f375f913574cae89f4104dbf03091d/artifacts
+end_time: 1708986909609
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65f375f913574cae89f4104dbf03091d
+run_name: trusting-kit-562
+run_uuid: 65f375f913574cae89f4104dbf03091d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708986718600
+status: 3
+tags: []
+user_id: jay

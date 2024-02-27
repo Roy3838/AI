@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5f9a71b69b5e4789bad3bce78f8d9514/artifacts
+end_time: 1708986515033
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5f9a71b69b5e4789bad3bce78f8d9514
+run_name: industrious-wolf-495
+run_uuid: 5f9a71b69b5e4789bad3bce78f8d9514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708985800010
+status: 3
+tags: []
+user_id: jay

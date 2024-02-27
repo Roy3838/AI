@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/repos/AI/keras/mlruns/0/59bdc17e0cbd49e2bc209d2e8f41162b/artifacts
+end_time: 1708624850020
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 59bdc17e0cbd49e2bc209d2e8f41162b
+run_name: welcoming-cat-878
+run_uuid: 59bdc17e0cbd49e2bc209d2e8f41162b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708624776075
+status: 3
+tags: []
+user_id: jay
