@@ -142,9 +142,13 @@ def create_dataset(num_images, large_image_size,  dataset_path):
     return labels
 
 # Parameters
-num_images = 50000  # number of images to generate
+num_images = 40000  # number of images to generate
 large_image_size = 100  # size of the image
 dataset_path = 'data/triangles_dataset'  # path to save the dataset
+
+# Delete the dataset folder if it exists using rm -rf 
+os.system(f'rm -rf {dataset_path}')
+
 
 # Create dataset
 labels = create_dataset(num_images, large_image_size,  dataset_path)
