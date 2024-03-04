@@ -60,6 +60,11 @@ def generate_triangle(image_size):
             cv2.fillPoly(image, vertices, 255)
             return add_square(image), vertices
 
+# Plot vectorial field meshgrid offset_x and offset_y
+
+
+
+
 def add_noise_and_distort_vertices(image, vertices):
     # Apply Gaussian blur
     blurred_image = cv2.GaussianBlur(image, (5, 5), 0)
@@ -76,21 +81,43 @@ def add_noise_and_distort_vertices(image, vertices):
     distorted_indices_y = (np.arange(cols) + offset_y) % cols
     distortion = blurred_image[distorted_indices_x, distorted_indices_y]
 
-    # Adjust vertices handling based on the provided structure
-    new_vertices = np.zeros_like(vertices)
-    for i, vertex_group in enumerate(vertices):
-        for j, vertex in enumerate(vertex_group):
-            x, y = vertex
-            # Ensure the vertex position is within the image bounds
-            if 0 <= x < rows and 0 <= y < cols:
-                distorted_x = (x + offset_x[x, 0]) % rows
-                distorted_y = (y + offset_y[y]) % cols
-                new_vertices[i][j] = [distorted_x, distorted_y]
-            else:
-                # If the vertex is out of bounds after distortion, handle as needed
-                new_vertices[i][j] = vertex
 
-    return distortion.astype(np.uint8), new_vertices
+    # First, reshape vertices for easier handling, remove the unnecessary first dimension
+    vertices = vertices.reshape((-1, 2))  # This will make vertices a (3, 2) array
+
+    # Initialize an array to store the distorted vertices
+    distorted_vertices = np.zeros_like(vertices)
+
+    # Process each vertex individually
+    for i, (y, x) in enumerate(vertices):
+        # Apply the distortion offsets directly to each vertex
+        # Since the offsets correspond to specific positions, we directly use them
+        # Ensure that we also account for the image's dimensions to avoid out-of-bounds indices
+        distorted_x = (x + offset_y[x % cols]) % cols
+        distorted_y = (y + offset_x[y % rows]) % rows
+        
+        # Store the distorted vertex
+        distorted_vertices[i] = [distorted_y, distorted_x]
+
+    # Reshape distorted_vertices back to original shape if needed
+    distorted_vertices = distorted_vertices.reshape((1, -1, 2))
+
+
+    # # Adjust vertices handling based on the provided structure
+    # new_vertices = np.zeros_like(vertices)
+    # for i, vertex_group in enumerate(vertices):
+    #     for j, vertex in enumerate(vertex_group):
+    #         x, y = vertex
+    #         # Ensure the vertex position is within the image bounds
+    #         if 0 <= x < rows and 0 <= y < cols:
+    #             distorted_x = (x + offset_x[x, 0]) % rows
+    #             distorted_y = (y + offset_y[y]) % cols
+    #             new_vertices[i][j] = [distorted_x, distorted_y]
+    #         else:
+    #             # If the vertex is out of bounds after distortion, handle as needed
+    #             new_vertices[i][j] = vertex
+
+    return blurred_image.astype(np.uint8), vertices
 
 
 
@@ -107,11 +134,15 @@ def create_dataset(num_images, large_image_size,  dataset_path):
         file_name = f'triangle_{i}.png'
         cv2.imwrite(os.path.join(dataset_path, file_name), noisy_image)
         labels.append({'file_name': file_name, 'vertices': new_vertices.tolist()})
+        # print Dataset size
+        if i % 100 == 0:
+            print(i/num_images*100, '%', end='\r')
+            print(f"Generated {i} images")
 
     return labels
 
 # Parameters
-num_images = 10000  # number of images to generate
+num_images = 50000  # number of images to generate
 large_image_size = 100  # size of the image
 dataset_path = 'data/triangles_dataset'  # path to save the dataset
 
