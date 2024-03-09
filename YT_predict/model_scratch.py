@@ -18,7 +18,7 @@ def load_jsonl_to_memory(filepath, fraction=4):
     with open(filepath, 'r', encoding='utf-8') as file:
         processed_lines = 0  # Keep track of how many lines have been processed
         for index, line in enumerate(tqdm(file, total=total_lines, desc="Processing")):
-            if index % fraction == 0:  # Process only every fraction-th line
+            if (index-1) % fraction == 0:  # Process only every fraction-th line
                 # Parse the JSON content from the line and add it to the data list
                 data[processed_lines] = json.loads(line)
                 processed_lines += 1
@@ -29,16 +29,7 @@ def load_jsonl_to_memory(filepath, fraction=4):
 
 data = load_jsonl_to_memory('/mnt/datassd/processed_file.jsonl')
 
-# |%%--%%| <iNSJjndvSD|oWVm17uamQ>
-
-# data in GB
-sys.getsizeof(data) / 1024**2
-
-# |%%--%%| <oWVm17uamQ|jeNktIzR1s>
-
-len(data)
-
-# |%%--%%| <jeNktIzR1s|hTck5MLDRM>
+#|%%--%%| <sbzELpjvcg|oWVm17uamQ>
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -75,7 +66,10 @@ y_train = np.log(y_train_n)
 y_train = np.where(y_train == -np.inf, 0, y_train)
 
 
-# |%%--%%| <hTck5MLDRM|UZ5jTpSq96>
+# |%%--%%| <oWVm17uamQ|UZ5jTpSq96>
+
+os.environ["KERAS_BACKEND"] = "tensorflow"
+
 
 import numpy as np
 import keras
@@ -121,39 +115,17 @@ model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-4), loss='mean_sq
 
 model.summary()
 
-
-# |%%--%%| <UZ5jTpSq96|nlXeHFPnD6>
-
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding, Conv1D, MaxPooling1D, LSTM, GlobalMaxPooling1D, Dense
-from tensorflow.keras.optimizers import Adam
-
-
-vocab_size = 10000  # Adjust based on your vocabulary size
-embedding_dim = 256
-max_length = 100  # Adjust based on your titles' maximum length
-
-model = Sequential([
-    Embedding(input_dim=vocab_size, output_dim=embedding_dim, input_length=max_length),
-    Conv1D(filters=128, kernel_size=5, activation='relu'),
-    MaxPooling1D(pool_size=4),
-    LSTM(128, return_sequences=True),
-    GlobalMaxPooling1D(),
-    Dense(256, activation='relu'),
-    Dense(1, activation='linear')  # Linear activation for a regression task
-])
-
-model.compile(optimizer=Adam(learning_rate=1e-4), loss='mean_squared_error')
-
-model.summary()
-
-
-# |%%--%%| <nlXeHFPnD6|sogp3wmkqN>
-
 del data
 
+import tensorflow as tf
+import keras
+#del X_train, y_train
 
-# |%%--%%| <sogp3wmkqN|A5CwqIiqkS>
+model = tf.keras.models.load_model('YT_T30_log.keras')
+
+
+
+# |%%--%%| <UZ5jTpSq96|A5CwqIiqkS>
 
 # Assuming X_train, y_train are your training data and labels, respectively
 model.fit(X_train, y_train, validation_split=0.1, epochs=15, batch_size=32)
@@ -161,76 +133,37 @@ model.fit(X_train, y_train, validation_split=0.1, epochs=15, batch_size=32)
 
 # |%%--%%| <A5CwqIiqkS|NjVou6EDo0>
 
-model.save('YT_T30_log.keras')
+model.save('YT_T45_log.keras')
 
-# |%%--%%| <NjVou6EDo0|u4VHnlqHHe>
+predictions = model.predict(X_test)
 
-import tensorflow as tf
-import keras
-#del X_train, y_train
-
-model = tf.keras.models.load_model('YT_T15_log.keras')
-
-# |%%--%%| <u4VHnlqHHe|Fy2WrIxI2U>
-
-# Predict view counts for the test set
-predictions = model.predict(X_test, verbose=1)
-
-# Optionally, compare the first few predictions to the actual view counts
 for i in range(10):  # Display first 10 predictions
     print(f"Predicted view count: {predictions[i]}, Actual view count: {y_test[i]}")
 
 
-# |%%--%%| <Fy2WrIxI2U|1b8b8x0TCu>
+#|%%--%%| <NjVou6EDo0|NWJd7aQ28G>
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+heatmap, xedges, yedges = np.histogram2d(y_test.flatten(), predictions.flatten(), bins=50)
+
+extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
+
+
+plt.imshow(heatmap.T, extent=extent, origin='lower')
+plt.savefig('t45_logh.png')
 
 import matplotlib.pyplot as plt
 
 
-
-# Plot the predicted vs. actual view counts
-
 plt.scatter(y_test, predictions, alpha=0.4)
 plt.xlabel('Actual View Count')
 plt.ylabel('Predicted View Count')
-plt.savefig('t30_log.png')
+plt.savefig('t45_log.png')
 
 
-# |%%--%%| <1b8b8x0TCu|133QJ2PHON>
 
-# Evaluate the model on the test set
-loss = model.evaluate(X_test, y_test, verbose=1)
+# |%%--%%| <NWJd7aQ28G|9IRxPNoVbP>
 
-# If you have specified any metrics when compiling the model, they will also be returned
-# Example: model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mae'])
-# Then you can unpack the results as follows:
-# loss, mae = model.evaluate(X_test, y_test, verbose=1)
-
-print(f"Test Loss: {loss}")
-# If applicable: print(f"Test MAE: {mae}")
-
-
-# |%%--%%| <133QJ2PHON|OCDRXaLHZE>
-
-model.fit(X_train, y_train, validation_split=0.1, epochs=10, batch_size=32)
-
-# |%%--%%| <OCDRXaLHZE|LKDv6pvBDA>
-
-model.save('YT_model20epochs.keras')
-
-# |%%--%%| <LKDv6pvBDA|0bZ9b8knsf>
-
-# Predict view counts for the test set
-predictions = model.predict(X_test, verbose=1)
-
-# Optionally, compare the first few predictions to the actual view counts
-for i in range(10):  # Display first 10 predictions
-    print(f"Predicted view count: {predictions[i]}, Actual view count: {y_test[i]}")
-
-# Evaluate the model on the test set
-loss = model.evaluate(X_test, y_test, verbose=1)
-
-print(f"Test Loss: {loss}")
-
-# |%%--%%| <0bZ9b8knsf|9IRxPNoVbP>
-
-model.fit(X_train, y_train, validation_split=0.1, epochs=10, batch_size=32)
