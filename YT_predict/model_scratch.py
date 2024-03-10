@@ -4,7 +4,7 @@ import os
 import sys
 from tqdm import tqdm
 
-def load_jsonl_to_memory(filepath, fraction=4):
+def load_jsonl_to_memory(filepath, fraction=3):
     # Determine the total number of lines to calculate the size of the fraction
     with open(filepath, 'r', encoding='utf-8') as file:
         total_lines = sum(1 for _ in file)
@@ -121,7 +121,10 @@ import tensorflow as tf
 import keras
 #del X_train, y_train
 
-model = tf.keras.models.load_model('YT_T30_log.keras')
+prev_model_name = 'YT_T45_log'
+actual_model_name = 'YT_T60_log'
+
+model = tf.keras.models.load_model(f'{prev_model_name}.keras')
 
 
 
@@ -133,7 +136,7 @@ model.fit(X_train, y_train, validation_split=0.1, epochs=15, batch_size=32)
 
 # |%%--%%| <A5CwqIiqkS|NjVou6EDo0>
 
-model.save('YT_T45_log.keras')
+model.save(f'{actual_model_name}.keras')
 
 predictions = model.predict(X_test)
 
@@ -153,7 +156,7 @@ extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
 
 
 plt.imshow(heatmap.T, extent=extent, origin='lower')
-plt.savefig('t45_logh.png')
+plt.savefig(f'{actual_model_name}_heatmap.png')
 
 import matplotlib.pyplot as plt
 
@@ -161,7 +164,7 @@ import matplotlib.pyplot as plt
 plt.scatter(y_test, predictions, alpha=0.4)
 plt.xlabel('Actual View Count')
 plt.ylabel('Predicted View Count')
-plt.savefig('t45_log.png')
+plt.savefig(f'{actual_model_name}_scatter.png')
 
 
 
