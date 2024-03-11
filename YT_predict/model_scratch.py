@@ -149,38 +149,110 @@ for i in range(10):  # Display first 10 predictions
 #|%%--%%| <NjVou6EDo0|nNomoUvqzW>
 
 # Make a line 
-x = np.linspace(0,16,100)
-y = np.linspace(0,16,100)
+x = np.linspace(0,10,100)
+y = np.linspace(0,10,100)
 
 #|%%--%%| <nNomoUvqzW|NWJd7aQ28G>
 
+#import seaborn as sns
+#import matplotlib.pyplot as plt
+#
+#
+#heatmap, xedges, yedges = np.histogram2d(y_test.flatten(), predictions.flatten(), bins=100)
+#
+#extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
+#
+#
+#plt.imshow(heatmap.T, extent=extent, origin='lower')
+#plt.plot(x,y, 'r--')
+#plt.xlabel('Views Order of Magnitude')
+#plt.ylabel('Predicted Order of Magnitude')
+#plt.xlim(2,15)
+#plt.ylim(0,17)
+#plt.savefig(f'{actual_model_name}_heatmap_bonito.png')
+#
+#import matplotlib.pyplot as plt
+#
+#
+#plt.scatter(y_test, predictions, alpha=0.1, s=0.5)
+#plt.plot(x,y,'r--')
+#plt.xlabel('Actual View Count')
+#plt.ylabel('Predicted View Count')
+#plt.savefig(f'{actual_model_name}_scatter_bonit.png')
+
+
+
+#|%%--%%| <NWJd7aQ28G|v61GjURvbq>
+
+# If you need to convert an array of values
+y_test_e = np.exp(y_test)  # Assuming y_test was in loge form
+y_test_10 = np.log10(y_test_e)
+
+predictions_e = np.exp(predictions)  # Assuming predictions were in loge form
+predictions_10 = np.log10(predictions_e)
+
+y_test = y_test_10
+predictions = predictions_10
+
+#|%%--%%| <v61GjURvbq|ohrretbeKu>
+
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
-
+# Assuming y_test and predictions are available and in log form
+# Heatmap
 heatmap, xedges, yedges = np.histogram2d(y_test.flatten(), predictions.flatten(), bins=100)
-
 extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
 
+plt.figure(figsize=(10, 8))
+sns.set(style="white")
 
-plt.imshow(heatmap.T, extent=extent, origin='lower')
-plt.plot(x,y, 'r--')
-plt.xlabel('Views Order of Magnitude')
-plt.ylabel('Predicted Order of Magnitude')
-plt.xlim(2,15)
-plt.ylim(0,17)
+# Using a colormap (e.g., 'viridis' which is visually appealing and colorblind-friendly)
+plt.imshow(heatmap.T, extent=extent, origin='lower', aspect='auto', cmap='viridis')
+
+# Assuming x, y for the red dashed line are defined correctly and correspond to log scale
+plt.plot(x, y, 'r--')
+
+plt.xlabel('Log of Actual View Count')
+plt.ylabel('Log of Predicted View Count')
+plt.colorbar(label='Count of Test')
+plt.title('Heatmap of Predictions vs Actual Views')
+plt.xlim(0, 9)
+plt.ylim(0, 9)
+
+# Adjusting x and y axis to show in 10^ format
+ax = plt.gca()
+ax.set_xticklabels([f'$10^{{{int(float(label))}}}$' for label in ax.get_xticks()])
+ax.set_yticklabels([f'$10^{{{int(float(label))}}}$' for label in ax.get_yticks()])
+
 plt.savefig(f'{actual_model_name}_heatmap_bonito.png')
 
-import matplotlib.pyplot as plt
+
+#|%%--%%| <ohrretbeKu|sXLwhEE9CR>
+
+plt.figure(figsize=(10, 8))
+sns.set(style="whitegrid")
+
+# Scatter plot with adjustments for alpha and size for better visibility
+plt.scatter(y_test, predictions, alpha=0.2, s=10, cmap='viridis')
+
+plt.plot(x, y, 'r--')  # Assuming x, y for the red dashed line are correct
+
+plt.xlabel('Log of Actual View Count')
+plt.ylabel('Log of Predicted View Count')
+plt.title('Scatter Plot of Predicted vs Actual Views')
+plt.xlim(0, 9)
+plt.ylim(0, 9)
 
 
-plt.scatter(y_test, predictions, alpha=0.1, s=0.5)
-plt.plot(x,y,'r--')
-plt.xlabel('Actual View Count')
-plt.ylabel('Predicted View Count')
-plt.savefig(f'{actual_model_name}_scatter_bonit.png')
+# Adjust axis to reflect 10^x and 10^y
+ax = plt.gca()
+ax.set_xticklabels([f'$10^{{{int(float(label))}}}$' for label in ax.get_xticks()])
+ax.set_yticklabels([f'$10^{{{int(float(label))}}}$' for label in ax.get_yticks()])
+
+plt.savefig(f'{actual_model_name}_scatter_bonito.png')
 
 
-
-# |%%--%%| <NWJd7aQ28G|9IRxPNoVbP>
+# |%%--%%| <sXLwhEE9CR|9IRxPNoVbP>
 
