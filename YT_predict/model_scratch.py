@@ -4,13 +4,15 @@ import os
 import sys
 from tqdm import tqdm
 
-def load_jsonl_to_memory(filepath, fraction=3):
+def load_jsonl_to_memory(filepath, fraction=4):
     # Determine the total number of lines to calculate the size of the fraction
     with open(filepath, 'r', encoding='utf-8') as file:
         total_lines = sum(1 for _ in file)
     
     # Calculate the number of lines to process based on the fraction
     lines_to_process = total_lines // fraction
+
+    #lines_to_process-= 3000000
     
     # Preallocate the list with None values for the fraction of data
     data = [None] * lines_to_process
@@ -18,7 +20,7 @@ def load_jsonl_to_memory(filepath, fraction=3):
     with open(filepath, 'r', encoding='utf-8') as file:
         processed_lines = 0  # Keep track of how many lines have been processed
         for index, line in enumerate(tqdm(file, total=total_lines, desc="Processing")):
-            if (index-1) % fraction == 0:  # Process only every fraction-th line
+            if (index+3) % fraction == 0:  # Process only every fraction-th line
                 # Parse the JSON content from the line and add it to the data list
                 data[processed_lines] = json.loads(line)
                 processed_lines += 1
@@ -121,8 +123,8 @@ import tensorflow as tf
 import keras
 #del X_train, y_train
 
-prev_model_name = 'YT_T45_log'
-actual_model_name = 'YT_T60_log'
+prev_model_name = 'YT_T75_log'
+actual_model_name = 'YT_T90_log'
 
 model = tf.keras.models.load_model(f'{prev_model_name}.keras')
 
