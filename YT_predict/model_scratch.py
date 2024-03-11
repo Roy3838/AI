@@ -123,7 +123,7 @@ import tensorflow as tf
 import keras
 #del X_train, y_train
 
-prev_model_name = 'YT_T75_log'
+prev_model_name = 'YT_T90_log'
 actual_model_name = 'YT_T90_log'
 
 model = tf.keras.models.load_model(f'{prev_model_name}.keras')
@@ -133,12 +133,12 @@ model = tf.keras.models.load_model(f'{prev_model_name}.keras')
 # |%%--%%| <UZ5jTpSq96|A5CwqIiqkS>
 
 # Assuming X_train, y_train are your training data and labels, respectively
-model.fit(X_train, y_train, validation_split=0.1, epochs=15, batch_size=32)
+#model.fit(X_train, y_train, validation_split=0.1, epochs=15, batch_size=32)
 
 
 # |%%--%%| <A5CwqIiqkS|NjVou6EDo0>
 
-model.save(f'{actual_model_name}.keras')
+#model.save(f'{actual_model_name}.keras')
 
 predictions = model.predict(X_test)
 
@@ -146,27 +146,39 @@ for i in range(10):  # Display first 10 predictions
     print(f"Predicted view count: {predictions[i]}, Actual view count: {y_test[i]}")
 
 
-#|%%--%%| <NjVou6EDo0|NWJd7aQ28G>
+#|%%--%%| <NjVou6EDo0|nNomoUvqzW>
+
+# Make a line 
+x = np.linspace(0,16,100)
+y = np.linspace(0,16,100)
+
+#|%%--%%| <nNomoUvqzW|NWJd7aQ28G>
 
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-heatmap, xedges, yedges = np.histogram2d(y_test.flatten(), predictions.flatten(), bins=50)
+heatmap, xedges, yedges = np.histogram2d(y_test.flatten(), predictions.flatten(), bins=100)
 
 extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
 
 
 plt.imshow(heatmap.T, extent=extent, origin='lower')
-plt.savefig(f'{actual_model_name}_heatmap.png')
+plt.plot(x,y, 'r--')
+plt.xlabel('Views Order of Magnitude')
+plt.ylabel('Predicted Order of Magnitude')
+plt.xlim(2,15)
+plt.ylim(0,17)
+plt.savefig(f'{actual_model_name}_heatmap_bonito.png')
 
 import matplotlib.pyplot as plt
 
 
-plt.scatter(y_test, predictions, alpha=0.4)
+plt.scatter(y_test, predictions, alpha=0.1, s=0.5)
+plt.plot(x,y,'r--')
 plt.xlabel('Actual View Count')
 plt.ylabel('Predicted View Count')
-plt.savefig(f'{actual_model_name}_scatter.png')
+plt.savefig(f'{actual_model_name}_scatter_bonit.png')
 
 
 
