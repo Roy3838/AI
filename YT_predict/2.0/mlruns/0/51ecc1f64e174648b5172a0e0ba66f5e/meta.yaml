@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/AI/YT_predict/2.0/mlruns/0/51ecc1f64e174648b5172a0e0ba66f5e/artifacts
+end_time: 1710287167354
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 51ecc1f64e174648b5172a0e0ba66f5e
+run_name: stylish-smelt-126
+run_uuid: 51ecc1f64e174648b5172a0e0ba66f5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710287136339
+status: 4
+tags: []
+user_id: jay

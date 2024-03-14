@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/AI/YT_predict/2.0/mlruns/0/60ed0a3228934d9fa57ee890dc52668a/artifacts
+end_time: 1710287047891
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 60ed0a3228934d9fa57ee890dc52668a
+run_name: rumbling-shark-364
+run_uuid: 60ed0a3228934d9fa57ee890dc52668a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710287007053
+status: 4
+tags: []
+user_id: jay

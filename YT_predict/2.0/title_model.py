@@ -3,7 +3,7 @@ import os
 import sys
 from tqdm import tqdm
 
-def load_jsonl_to_memory(filepath, fraction=4):
+def load_jsonl_to_memory(filepath, fraction=1):
     # Determine the total number of lines to calculate the size of the fraction
     with open(filepath, 'r', encoding='utf-8') as file:
         total_lines = sum(1 for _ in file)
@@ -11,7 +11,7 @@ def load_jsonl_to_memory(filepath, fraction=4):
     # Calculate the number of lines to process based on the fraction
     lines_to_process = total_lines // fraction
 
-    #lines_to_process-= 3000000
+    # #lines_to_process-= 3000000
     
     # Preallocate the list with None values for the fraction of data
     data = [None] * lines_to_process
@@ -30,7 +30,17 @@ def load_jsonl_to_memory(filepath, fraction=4):
 
 data = load_jsonl_to_memory('/mnt/datassd/processed_file.jsonl')
 
-#|%%--%%| <sbzELpjvcg|oWVm17uamQ>
+
+#|%%--%%| <vhFKGbA7bG|Y1ps5BQSbz>
+
+os.environ["KERAS_BACKEND"] = "jax"
+import keras
+import numpy as np
+
+import mlflow
+
+
+#|%%--%%| <Y1ps5BQSbz|oWVm17uamQ>
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -69,11 +79,7 @@ y_train = np.where(y_train == -np.inf, 0, y_train)
 
 # |%%--%%| <oWVm17uamQ|UZ5jTpSq96>
 
-os.environ["KERAS_BACKEND"] = "tensorflow"
 
-
-import numpy as np
-import keras
 from keras import layers
 import keras_nlp
 

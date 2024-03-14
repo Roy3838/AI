@@ -16,4 +16,4 @@ def process_large_jsonl(input_filepath, output_filepath):
             outfile.write(json.dumps(processed_data) + '\n')
 
 # Make sure to replace the file paths with the correct ones for your environment.
-process_large_jsonl('/mnt/datassd/rawdata.jsonl', '/hdd/YT_Dataset/processed_file.jsonl')
+process_large_jsonl('/hdd/YT_Dataset/_raw_yt_metadata.jsonl', '/hdd/YT_Dataset/processed_file.jsonl')

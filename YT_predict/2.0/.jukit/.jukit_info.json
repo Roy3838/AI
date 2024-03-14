@@ -1,0 +1,1 @@
+{"cmd": "predictions = model.predict(data_generator(filepath, tokenizer))", "cmd_opts": "", "import_complete": 1, "terminal": "nvimterm"}

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/AI/YT_predict/2.0/mlruns/0/daa29265e0484d95be12a3e88964315f/artifacts
+end_time: 1710285094464
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: daa29265e0484d95be12a3e88964315f
+run_name: overjoyed-shrike-536
+run_uuid: daa29265e0484d95be12a3e88964315f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710285027484
+status: 4
+tags: []
+user_id: jay

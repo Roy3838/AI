@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jay/AI/YT_predict/2.0/mlruns/0/18851d50b3534b6bbf40c4d720a43440/artifacts
+end_time: 1710286575055
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 18851d50b3534b6bbf40c4d720a43440
+run_name: debonair-shrimp-954
+run_uuid: 18851d50b3534b6bbf40c4d720a43440
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710286575045
+status: 4
+tags: []
+user_id: jay
